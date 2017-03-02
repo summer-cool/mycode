@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="background: #f3f3f3; margin:0;">
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	 var ua = navigator.userAgent,
+     isAndroid = /android/ig.test(ua),
+     isIos = /iphone|ipod|ipad/ig.test(ua),  
+     isMicroMessenger = /MicroMessenger/ig.test(ua);
+	 
+	 var openid = getQueryString("openid");
+	 var ip = getQueryString("ip");
+	 var url = "http://service.sincetimes.com/moon/downloadhits/";
+		console.log(openid);
+ 		console.log(isAndroid);
+ 		console.log(isIos);
+ 		console.log(isMicroMessenger);
+ 	if (isMicroMessenger) {
+    	 if (isIos) {
+        	 document.body.innerHTML = '<img style="width:100%" src="imgs/weixin_tiaozhuan960x640.jpg">';
+     	} else if (isAndroid) {
+       		 document.body.innerHTML = '<img style="width:100%" src="imgs/weixin_tiaozhuan960x640.jpg">';
+     	}
+ 	} else {
+     	if (isIos) {
+    	 tellyou(url, openid, ip, "ios")
+         location.href = 'http://itunes.apple.com/cn/app/zhan-jian-di-guo/id859012637?l=zh&ls=1&mt=8';
+     } else if (isAndroid) {
+    	 tellyou(url, openid, ip,"android")
+         location.href= 'http://worldship.sincetimes.com/uniPublic_apk/quickWorldShip_active_1101.apk';
+     }else{
+    	 tellyou(url, openid, ip,"pc");
+     }
+ }
+});
+function getQueryString(name) {  
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+    var r = window.location.search.substr(1).match(reg);  
+    if (r != null) return unescape(r[2]);  
+    return null;  
+}
+function tellyou(url, openid,ip, os){
+    $.ajax({
+        type:"POST",
+        dataType:"json",
+        url:url+os,
+        data:{
+            openid: openid,
+            ip: ip
+        },
+        success:function(data){
+          	console.log("tell ok	"+url);
+        },
+        error:function(){
+        	console.log("tell failed	"+url);
+        }
+    })
+};
+</script>
+</body>
+</html>

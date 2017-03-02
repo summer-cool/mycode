@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family:"微软黑体";
+}
+#container{
+    width:100%;
+    min-height:600px;
+}

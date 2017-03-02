@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 
+    </title>
+</head>
+<body>
+    
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url:"http://www.goodsinfo.cn/api/type/list",
+            type:"GET",
+            dataType:"jsonp",
+            success:function(data){
+                var data = eval(data);
+                console.log(data)
+            },
+            error:function(data){
+                console.log(data)
+            }
+        })
+    })
+</script>
+</html>

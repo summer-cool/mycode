@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "date": "2010-5-1",
+      "olduser": "555005",
+      "newuser":"15000",
+      "payolduser":"50012",
+      "paynewuser":"50000",
+      "DAU":"52010"
+    },
+    {
+      "date": "2010-5-2",
+      "olduser": "555015",
+      "newuser":"15003",
+      "payolduser":"52012",
+      "paynewuser":"52000",
+      "DAU":"52010"
+    },
+    {
+      "date": "2010-5-1",
+      "olduser": "555005",
+      "newuser":"15000",
+      "payolduser":"50012",
+      "paynewuser":"50000",
+      "DAU":"52010"
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+.fullslider{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+} 
+.video_bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 50;
+    -moz-box-shadow: inset 0px 0px 200px #000000;
+    -webkit-box-shadow: inset 0px 0px 200px #000000;
+    box-shadow: inset 0px 0px 200px #000000;
+    z-index: 2;
+    top: 0px;
+}
+#c_video{
+    width:100%;
+    height:auto;
+    position:static;
+    display:inline-block;
+}
+@media (min-width:1200px){
+    .fullslider{
+        height:700px;
+    }
+}
+@media (max-width:960px){
+    .fullslider{
+        height:360px;
+    }
+}
+@media (max-width:640px){
+    .fullslider{
+        height:320px;
+    }
+}
+@media (max-width:520px){
+    .fullslider{
+        height:240px;
+    }
+    #c_video{
+        display:none;
+    }
+    .hide_bg{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:240px;
+        z-index:1;
+        background:url(../imgs/cp01.jpg) no-repeat;
+        background-size:100% 100%;
+    }
+}
+/*公司简介*/
+.company_text{
+    width:100%;
+    background:#282a2e;
+    position:relative;
+}
+#triangle-down{
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    margin-left:-7px;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #282a2e;
+}
+.cp_p_1{
+    color:#a4ce21;
+    font-size:12px;
+    text-align: center;
+    margin:0;
+}
+@media (min-width:768px){
+    .cp_centerbox{
+        color:#717171;
+        font-size:15px;
+        width:768px;
+        margin:0 auto;
+        height:200px;
+        background:url(../imgs/cp02.png) no-repeat;
+        background-size: contain;
+        background-position-y: 37%;
+    }
+    .company_text{
+        height:200px;    
+    }
+    .cp_Dtext{
+        color:#717171;
+        font-size:15px;
+        padding:30px 20%;
+        word-wrap: break-word;
+        word-break:break-all;  
+    }
+}
+@media (max-width:768px){
+    .cp_Dtext{
+        color:#717171;
+        font-size:12px;
+        padding:30px 20%;
+        word-wrap: break-word;
+        word-break:break-all;  
+    }
+   
+}
+/*发展路程*/
+.cp_road{
+    width:100%;
+    height:auto;
+    background:url(../imgs/cp03.png) no-repeat;
+    background-size: cover;
+}
+.road_box{
+    display:none;
+}
+@media (min-width:800px){
+   .road_box{
+    width:800px;
+    height:auto;
+    margin:0 auto;
+    display:block;
+   }
+   .road_title{
+    width:100%;
+    height:46px;
+    padding:60px 0px;
+   }
+   .road_title img{
+    float:right;
+    width:250px;
+    height:70px;
+    display:inline-block;
+   }
+   @keyframes rote{
+     0%{
+        transform:rotate(0);
+        -webkit-transform:rotate(0);
+        -moz-transform:rotate(0);
+        -ms-transform:rotate(0);
+     }
+     100%{
+        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+     }
+   }
+   @keyframes rotateT{
+      0%{
+        transform:rotate(0);
+        -webkit-transform:rotate(0);
+        -moz-transform:rotate(0);
+        -ms-transform:rotate(0);
+     }
+     100%{
+        transform:rotate(-360deg);
+        -webkit-transform:rotate(-360deg);
+        -moz-transform:rotate(-360deg);
+        -ms-transform:rotate(-360deg);
+     }
+   }
+   .road_detail{
+    width:100%;
+    height:1600px;
+    position:relative;
+   }
+   .road_8_1{
+    width:340px;
+    height:88px;
+    position:absolute;
+    top:40px;
+    left:58px;
+    cursor:pointer;
+   }
+   .road_8_2{
+    width:145px;
+    height:145px;
+    position:absolute;
+    top:104px;
+    left:285px;
+   }
+   .road_9_1{
+    width: 353px;
+    height: 91px;
+    position: absolute;
+    right: 11px;
+    top: 182px;
+    display: none;
+    z-index: 1;
+   }
+   .year_2009{
+    width: 71px;
+    height: 16px;
+    position: absolute;
+    right: 277px;
+    top: 256px;
+   }
+   .road_9_2{
+    width:112px;
+    height:112px;
+    position:absolute;
+    right:255px;
+    top:207px;
+    cursor:pointer;
+    background-position:center;
+    animation:rote 5s linear infinite;
+    -webkit-animation:rote 5s linear infinite;
+    -moz-animation:rote 5s linear infinite;
+    -ms-animation:rote 5s linear infinite;
+   }
+   .road_10_1{
+    width:142px;
+    height:142px;
+    position:absolute;
+    right:322px;
+    top:318px;
+    z-index:1;
+    cursor:pointer;
+    background-position:60px 70px;
+    background-size:45px 25px;
+    animation:rotateT 6s 1s linear infinite;
+    -webkit-animation:rotateT 6s 1s linear infinite;
+    -moz-animation:rotateT 6s 1s linear infinite;
+    -ms-animation:rotateT 6s 1s linear infinite;
+   }
+   .year_2010{
+    width: 79px;
+    height: 27px;
+    position: absolute;
+    right: 352px;
+    top: 375px;
+    z-index: 1
+   }
+   .road_10_2{
+    width: 735px;
+    height: 145px;
+    position: absolute;
+    right: 47px;
+    top: 348px;
+    display:none;
+    z-index:1;
+   }
+   .road_11_1{
+    width:160px;
+    height:160px;
+    position:absolute;
+    left:250px;
+    top:495px;
+    animation:rote 6s 2s linear infinite;
+    -webkit-animation:rote 6s 2s linear infinite;
+    -moz-animation:rote 6s 2s linear infinite;
+    -ms-animation:rote 6s 2s linear infinite;
+   }
+   .year_2011{
+    width: 67px;
+    height: 14px;
+    position: absolute;
+    left: 296px;
+    top: 567px;
+   }
+    .road_11_2{
+    width:777px;
+    height:232px;
+    position:absolute;
+    left:10px;
+    top:439px;
+    display:none;
+    z-index:1;
+   }
+    .road_12_1{
+    width:145px;
+    height:145px;
+    position:absolute;
+    right:313px;
+    top:640px;
+    animation:rotateT 6s 3s linear infinite;
+    -webkit-animation:rotateT 6s 3s linear infinite;
+    -moz-animation:rotateT 6s 3s linear infinite;
+    -ms-animation:rotateT 6s 3s linear infinite;
+   }
+   .road_12_2{
+    width: 760px;
+    height: 284px;
+    position: absolute;
+    right: 28px;
+    top: 560px;
+    display: none;
+    z-index: 1;
+   }
+   .year_2012{
+    width: 67px;
+    height: 16px;
+    position: absolute;
+    right: 354px;
+    top: 705px;
+   }
+    .road_13_1{
+    width:130px;
+    height:130px;
+    position:absolute;
+    left:228px;
+    top:785px;
+    animation:rote 6s 4s linear infinite;
+    -webkit-animation:rote 6s 4s linear infinite;
+    -moz-animation:rote 6s 4s linear infinite;
+    -ms-animation:rote 6s 4s linear infinite;
+   }
+   .year_2013{
+    width: 71px;
+    height: 16px;
+    position: absolute;
+    left: 255px;
+    top: 841px;
+   }
+   .road_13_2{
+    width:800px;
+    height:334px;
+    position:absolute;
+    right:0px;
+    top:659px;
+    display:none;
+    z-index:1;
+   }
+    .road_14_1{
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    left: 319px;
+    top: 879px;
+    animation:rotateT 6s 5s linear infinite;
+    -webkit-animation:rotateT 6s 5s linear infinite;
+    -moz-animation:rotateT 6s 5s linear infinite;
+    -ms-animation:rotateT 6s 5s linear infinite;
+   }
+   .year_2014{
+    width: 72px;
+    height: 14px;
+    position: absolute;
+    left: 389px;
+    top: 972px;
+   }
+   .road_14_2{
+    width: 780px;
+    height: 335px;
+    position: absolute;
+    left: 29px;
+    top: 823px;
+    display:none;
+    z-index:1;
+   }
+    .road_15_1{
+    width: 127px;
+    height: 127px;
+    position: absolute;
+    left: 408px;
+    top: 1125px;
+     animation:rote 6s 6s linear infinite;
+    -webkit-animation:rote 6s 6s linear infinite;
+    -moz-animation:rote 6s 6s linear infinite;
+    -ms-animation:rote 6s 6s linear infinite;
+   }
+   .year_2015{
+    width: 76px;
+    height: 21px;
+    position: absolute;
+    left: 432px;
+    top: 1175px
+   }
+   .road_15_2{
+    width: 780px;
+    height: 480px;
+    position: absolute;
+    left: 20px;
+    top: 937px;
+    display:none;
+    z-index:1;
+   }
+    .road_16_1{
+    width: 176px;
+    height: 176px;
+    position: absolute;
+    left: 340px;
+    top: 1256px;
+    animation:rotateT 6s 7s linear infinite;
+    -webkit-animation:rotateT 6s 7s linear infinite;
+    -moz-animation:rotateT 6s 7s linear infinite;
+    -ms-animation:rotateT 6s 7s linear infinite;
+   }
+   .year_2016{
+    width: 73px;
+    height: 17px;
+    position: absolute;
+    left: 390px;
+    top: 1337px;
+   }
+   .road_16_2{
+    width: 785px;
+    height: 230px;
+    position: absolute;
+    left: 9px;
+    top: 1172px;
+    display:none;
+    z-index:1;
+   }
+    .road_17_1{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 438px;
+    top: 1435px;
+    animation:rote 6s 8s linear infinite;
+    -webkit-animation:rote 6s 8s linear infinite;
+    -moz-animation:rote 6s 8s linear infinite;
+    -ms-animation:rote 6s 8s linear infinite;
+   }
+   .year_weilai{
+       width: 42px;
+    height: 23px;
+    position: absolute;
+    left: 455px;
+    top: 1460px;
+   }
+   .road_17_2{
+    width: 516px;
+    height: 130px;
+    position: absolute;
+    left: 35px;
+    top: 1398px;
+    display:none;
+    z-index:1;
+   }
+   .fadeshow_ul{
+    display:inline-block;
+    position:absolute;
+    z-index:2;
+    left:0;
+    top:208px;
+    width:800px;
+    height:1400px;
+   }
+   .fadeshow_ul li{
+        width:100%;
+        cursor:pointer;
+   }
+   .show_li_1{
+        height:130px;
+   }
+   .show_li_2{
+        height:150px;
+   }
+    .show_li_3{
+        height:150px;
+   }
+    .show_li_4{
+        height:150px;
+   }
+    .show_li_5{
+        height:110px;
+   }
+    .show_li_6{
+        height:220px;
+   }
+    .show_li_7{
+        height:135px;
+   }
+    .show_li_8{
+        height:178px;
+   }
+    .show_li_9{
+        height:75px;
+   }
+}
+.fadeIn{
+    display:inline-block;
+    animation:1s ease-in-out;
+    -webkit-animation:1s ease-in-out;
+    -ms-animation:1s ease-in-out;
+    -moz-animation:1s ease-in-out;
+}
+.mobile_road{
+    display:none;
+}
+@media (max-width:800px){
+    .mobile_road{
+        padding:20px 4%;
+        height:5620px;
+        overflow:hidden;
+        font-size:18px;
+        color:#9E3310;
+        display:block;
+    }
+    .mb_rd_left{
+        width:100%;
+        float: left;
+        height:auto;
+        position:relative;
+    }
+    .line_bg{
+        width:103px;
+        height:5620px;
+        position:absolute;
+        left:0;
+        top:0;
+    } 
+    p{
+        margin:0px;
+    }
+    .radio_line{
+        position:relative;
+    }
+    .radio_line img{
+        width:25px;
+        height:25px;
+        float: left;
+    }
+    .radio_line b{
+        width: 100%;
+        height: 1px;
+        display: inline-block;
+        background: #a8a9ad;
+        position: absolute;
+        left: 25px;
+        top: 12px;
+    }
+    /*road_1*/
+    .mb_1{
+        height:104px;
+        margin:272px 0 0 40px;
+    }
+   
+    .mb_p_1{
+        text-align:right;
+    }
+    .mb_img_1{
+        width:134px;
+        height:68px;
+        float: right;
+        margin-top:15px;
+    }
+    /*road_2*/
+     .mb_2{
+        height:64px;
+        margin:200px 0 0 40px;
+    }
+   
+    .mb_p_2{
+        padding:0 12%;
+    }
+    /*road_3*/
+    .mb_3{
+        height:196px;
+        margin:250px 0 0 40px;
+    }
+    .mb_img_3{
+        width:172px;
+        height:152px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_4*/
+    .mb_4{
+        height:220px;
+        margin:106px 0 0 40px;
+    }
+    .mb_p{
+        margin-left:20%;
+    }
+    .mb_img_4{
+        width:172px;
+        height:152px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_5*/
+    .mb_5{
+        height:226px;
+        margin:95px 0 0 40px;
+    }
+    .mb_img_5{
+        width:172px;
+        height:152px;
+        float: right;
+        margin-top:25px;
+    }
+    .mb_6{
+        height:289px;
+        margin:55px 0 0 40px;
+    }
+    .mb_img_6{
+        width:469px;
+        height:236px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_6*/
+    .mb_7{
+        height:343px;
+        margin:165px 0 0 40px;
+    }
+    .mb_img_7{
+        width:172px;
+        height:152px;
+        float: right;
+        margin-top:25px;
+    }
+    .mb_8{
+        height:289px;
+        margin:55px 0 0 40px;
+    }
+    .mb_img_8{
+        width:469px;
+        height:236px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_7*/
+    .mb_9{
+        height:343px;
+        margin:165px 0 0 40px;
+    }
+    .mb_img_9{
+        width:172px;
+        height:152px;
+        float: right;
+        margin-top:25px;
+    }
+    .mb_10{
+        height:289px;
+        margin:55px 0 0 40px;
+    }
+    .mb_img_10{
+        width:469px;
+        height:236px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_8*/
+    .mb_11{
+        height: 498px;
+        margin: 92px 0 0 40px;
+    }
+    .mb_img_11{
+        width:172px;
+        height:152px;
+        float: right;
+        margin-top:25px;
+    }
+    .mb_12{
+        height:226px;
+        margin:55px 0 0 40px;
+    }
+    .mb_img_12{
+        width:200px;
+        height:100px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_9*/
+    .mb_13{
+        height:315px;
+        margin:272px 0 0 40px;
+    }
+    .mb_img_13{
+        width:469px;
+        height:236px;
+        float: right;
+        margin-top:25px;
+    }
+    /*road_10*/
+    .mb_14{
+        height:150px;
+        margin:116px 0 0 40px;
+    }
+}
+@media (max-width:580px){
+    .rd_img{
+        width:90px;
+        height:90px;
+    }
+    .rd_jpg{
+        width: 260px;
+        height: 180px;
+    }
+     .mobile_road{
+        font-size:14px;
+    }
+}
+@media (max-width:340px){
+    .rd_jpg{
+        width: 220px;
+        height: 140px;
+    }
+}
+

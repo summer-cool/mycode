@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no" name="format-detection">
+    <title>中秋月饼大作战  十万话费任性送</title>
+    <meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/reset.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/zepto.js"></script>
+    <script type="text/javascript">
+        $(function() {  
+            FastClick.attach(document.body);  
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="container" class="container">
+        <div style='display:none;'>
+            <img src='imgs/icon.jpg'/>
+        </div>
+    <!-- music -->
+    <div id="music" class="music">
+        <a class="music-btn"></a>
+    </div>
+    <!-- getmusic -->
+    <audio id="get" preload="auto" src="music/get.mp3"   hidden></audio>
+    <!-- boommusic -->
+    <audio id="boom" preload="auto" src="music/boom.mp3"   hidden></audio>
+    <!-- loading -->
+    <div class="loading">
+        <img src="imgs/loading.gif" alt="">
+    </div>
+    <div class="load_bg">
+        
+    </div>
+        <!-- 顶部titile -->
+        <div class="hdgz">
+            <span class="hdgz_span">还剩<span class="fifshow"></span>话费可领取</span>
+            <button class="hd_sm" type="button">活动规则</button>
+        </div>
+        <!--第一页-->
+        <div class="firstpage">
+            <img class="strat_btn" src="imgs/start.png" alt="">
+        </div>
+        <!-- 游戏盒子 -->
+        <div class="game_box">
+            <!-- 进度条 -->
+            <div class="jdt_C">
+                <!-- 五十元话费进度条 -->
+                <div class="wushi_C">
+                    <div class="wsy_jdt"> 
+                    </div>
+                    <span>￥50话费</span>
+                </div>
+                <button class="lq_button" type="">点击领取</button>
+                <!-- 头像 -->
+                <div class="head_img_C">
+                    <img class="head_img" src="" alt="">
+                </div>
+                <!-- 总进度条 -->
+                <div class="main_jdt_C">
+                    <div class="jdt_2">
+                        <span class="jdt_num">0</span>
+                    </div>
+                    <span class="jdt_num_2">10000</span>
+                </div>
+                <p class="jdt_text">距离50元话费还差<span class="need_num"></span>积分</p>
+            </div>
+            <!-- 计时器 -->
+            <div class="jishiqi_C">
+                <div class="jishiqi">
+                    <div id="jsq_cover" class="jsq_cover">
+                          
+                    </div>  
+                </div>
+            </div>
+            <div class="game_C" id="game_box">
+                 <!-- gameover_slider -->
+                <div class="game_over_slider">
+                    <div class="gm_text_C">
+                        <p class="gm_text">恭喜您抢到<span style="color:#ca000a" class="gm_num"></span>积分！</p>
+                        
+                        <p>
+                            <img class="gm_text_img" src="imgs/gmover_text.png" alt="">
+                        </p>
+                        <button class="join_btn" type="button"></button>
+                    </div>
+                    <div class="gm_text_C_2">
+                        <p class="gm_text">好厉害！</p>
+                        <p class="gm_text">帮<span style="color:#ca000a" class="fd_name"></span>抢到了<span style="color:#ca000a" class="fd_fs"></span>积分呢！</p>
+                         <p>
+                            <img class="gm_text_img_2" src="imgs/gmover_text.png" alt="">
+                        </p>
+                         <button class="join_btn_2" type="button"></button>
+                    </div>
+                </div>
+                <div id="container_game">
+                    <div id="guidePanel"></div>
+                    <div id="gamepanel">
+                        <canvas id="stage" width="320" height="330"></canvas>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!-- 规则说明_start-->
+        <div class="gzsm_C">
+            <div>
+                <img class="gzsm_img" src="imgs/gzsm.png" alt="">
+            </div>
+            <img class="game_start" id="game_start" src="imgs/game_start.png" alt="">
+        </div>
+        <!-- 游戏开始倒计时 -->
+        <div class="djs_num_C">
+            <img class="djs_img" src="imgs/3.png" alt="">
+        </div>
+        <div class="gzsm_bg"></div>
+        <!-- head_规则说明-->
+        <div class="gzsm_1_C">
+            <div class="gzsm_text_C">
+                <p>①活动时间：9月13日-9月17日</p>
+                <p>②当积分达到10000时即有资格抢50元话费</p>
+                <p>③积分可通过求助好友或者下载游戏来获得</p>
+                <p>④每日20:00-22:00为领取话费时间，数量有限，先到先得</p>
+                <p>⑤本活动最终解释权归《战舰帝国》官方运营团队所有</p>
+                <img class="gz_1_img" src="imgs/logo.png" alt="">
+                <img class="gz_2_img" src="imgs/text_img.png" alt="">
+                <div>
+                    <img class="gz_3_img" src="imgs/erweima.jpg" alt="">
+                    
+                </div>
+                <img class="gz_4_img" src="imgs/text_img_2.png" alt="">
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+            <!-- 游戏下载 -->
+            <img class="down_btn" src="imgs/down_btn.png" alt="">
+            <!-- 箭头 -->
+            <img class="jiantou" src="imgs/jiantou.png" alt="">
+            <!-- 好友助力 -->
+            <div class="friend_C">
+                <div class="fd_titile_C">
+                    <ul>
+                        <li class="fd_text_1">
+                            <p>已有<span class="fd_num"></span>位好友助力</p>
+                        </li>
+                        <li class="fd_text_2">
+                            <img src="imgs/fd_text.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                 <!-- haoyouzhuli -->
+                <div class="fd_C">
+                </div>
+                <p class="bottom_text">北京华清飞扬网络股份有限公司版权所有</p>
+            </div>
+        </div>
+        <!-- 话费领取不成功弹窗 -->
+        <div class="hflq_C">
+            <span class="closeBtn">
+                <img class="close" src="imgs/close.png" alt="">
+            </span>
+            <!-- 未抢到 -->
+            <div class="wqd_C">
+                <p>他们手速太快了，话费已领完，明天继续哦！</p>
+                <p>来个礼包压压惊，登陆游戏领取</p>
+                <p>
+                    <span class="jhm">KKAJLKJFLJGKLD</span>
+                    <span class="fz_btn">长按复制</span>
+                </p>
+            </div>
+            <!-- 未到时间 -->
+            <div class="wdsj_C">
+                <p>请于每日20:00-22:00来此页面领取话费</p>
+                <p>数量有限，先到先得哦！</p>
+            </div>
+            <!-- 输入号码 领取-->
+            <div class="srNum_C">
+                <input class="phoneNum" type="text" name="phoneNum" placeholder="请输入手机号码">
+                <button class="submitNum" type="button">提交</button>
+            </div>
+        </div>
+        <div class="hflq_bg">
+        </div>
+        <!-- 邀请好友助力弹窗 -->
+        <div class="invite">
+            <img class="zlzy" src="imgs/zlzy.png" alt="">
+        </div>
+        <div class="invite_bg">   
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,52 @@
+.zx_C{
+    width:1004px;
+    height:580px;
+    margin:0 auto;
+    margin-top:60px;
+}
+.zx_content{
+    background-size:cover;
+    width:1200px;
+    min-height:900px;
+    overflow:hidden;
+}
+.zx_a{
+    color:white;
+    font-size:32px;
+}
+.zx_jt{
+    font-size:20px;
+    color:white;
+}
+.sy_a{
+    color:white;
+    font-size:20px;
+}
+.zx_Detial{
+    background:#182127;
+    width:100%;
+    height:524px;
+    margin-top:16px;
+    overflow:hidden;
+    border:1px solid #00ded9;
+    box-shadow:0px 0px 40px #00ded9;
+    -moz-box-shadow:0px 0px 40px #00ded9;
+}
+.zx_dt_ul{
+    width:932px;
+    height:20px;
+    font-size:20px;
+    line-height:20px;
+    color:white;
+    margin:16px 0 0 40px;
+}
+.dt_li_1{
+    float:left;
+}
+.dt_li_2{
+    float:right;
+}
+.dt_content{
+    margin:20px 0 0 40px;
+    color:white;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>领取激活码</title>
+    <style type="text/css" media="screen">
+    html,body{
+        height:100%;
+        font-family:"宋体";
+    }
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width:10rem;
+            height:100%;
+            margin:0 auto;
+            min-height:17.066667rem;
+            position:relative;
+        }
+        .container img{
+            width:10rem;
+            height:100%;
+        }
+        .jhm_div{
+            width:6.306667rem;
+            height:0.76rem;
+            line-height:0.76rem;
+            position:absolute;
+            left:50%;
+            top:57%;
+            margin-left:-3.15rem;
+            background-color:white;
+        }
+        [data-dpr="1"] .jhm_div p{
+            font-size:17px;
+        }
+         [data-dpr="3"] .jhm_div p{
+            font-size:68px;
+        }
+        .jhm_div p{
+            font-size:34px;
+            color:black;
+            text-align:center;
+
+        }
+    </style>
+    <script src="js/reset.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="imgs/jhm_bg.jpg" alt="">
+        <div class="jhm_div">
+            <p>752i61ybkyXXXXXXX</p>
+        </div>
+    </div>
+</body>
+</html>

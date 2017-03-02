@@ -1,0 +1,11 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+html, body {
+    height: 100%;
+}
+

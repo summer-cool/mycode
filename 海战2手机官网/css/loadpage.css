@@ -1,0 +1,64 @@
+.main_container{
+    background:url(../imgs/load_bg.png) no-repeat;
+    background-size:cover;
+}
+.header{
+    margin:1.546667rem 0 0 0.36rem;
+}
+.header img{
+    display:inline-block;
+}
+.yx_loadimg{
+    width:3.733333rem;
+    height:0.88rem;
+}
+.yx_img{
+    width:1.2rem;
+    height:0.44rem;
+}
+.load_part{
+    margin:0 auto;
+    margin-top:1.04rem;
+    width:8.8rem;
+    height:6rem;
+    overflow:hidden;
+}
+.erweima{
+    width:3.533333rem;
+    height:3.533333rem;
+    text-align:center;
+    float:left;
+    background:white;
+    margin:0.2rem 0 0 0.96rem;
+}
+.erweima img{
+    width:100%;
+}
+.load_iconC{
+    width:3.4rem;
+    height:3.68rem;
+    float:left;
+    margin:0.2rem 0 0 0.613333rem;
+}
+.load_iconC li{
+    width:3.306667rem;
+    height:1.146667rem;
+    margin-bottom:0.1rem;
+}
+.load_iconC li img{
+    width:100%;
+}
+.footer{
+   position: absolute;
+   width:100%;
+   text-align:center;
+   color:white;
+}
+.tw_img{
+    width:1.933333rem;
+    height:0.6rem;
+    margin-left:0.8rem;
+}
+.tt_img_C{
+    width:100%;
+}

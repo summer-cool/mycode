@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reactTest</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.js"></script>
+     <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
+</head>
+<body>
+    <div id="example">
+        
+    </div>
+    <script type="text/babel">
+    var data = [
+        {id:1,name:"李健",age:"26"},
+        {id:2,name:"累了",age:"23"},
+        {id:3,name:"LL",age:"22"}
+    ];
+      var CommentBox = React.createClass({
+        getInitialState: function() {
+        return {data: []};
+      },
+      LoadComment:function(){
+       $.ajax({
+            url:this.props.url,
+            dataType:"json",
+            cache:false,
+            data:{
+
+            },
+            success:function(data){
+                this.setState({data:data});
+            }.bind(this),
+            error:function(){
+            }.bind(this)
+        });
+      },
+      componentDidMount:function(){
+        this.LoadComment();
+        setInterval(this.LoadComment,this.props.time);
+      },
+        render:function(){
+
+            return(
+                <div className="CommentBox">
+                        <CommentList data={this.state.data} />
+                        <CommentForm />
+                        <Conunter />
+                </div>
+            )
+        }
+      });
+      var Comment = React.createClass({
+            render:function(){
+                return(
+                    <div className="Comment">
+                        <h2 className="CommentAuthor">
+                            {this.props.author}
+                        </h2>
+                        {this.props.children}
+                    </div>
+                )
+            }
+      });
+      var CommentList = React.createClass({
+        render:function(){
+            var commentNodes = this.props.data.map(function(data){
+                return(
+                    <Comment author={data.name} key={data.id}>{data.text}</Comment>
+                )
+            });
+            return(
+                <div className="CommentList">
+                    {commentNodes}
+                </div>
+            )
+        }
+      });
+      var CommentForm = React.createClass({
+        getInitialState: function() {
+        return {name: '', text: ''};
+      },
+      handChangeOne: function(e) {
+        this.setState({name: e.target.value});
+      },
+      handChangeTwo: function(e) {
+        this.setState({text: e.target.value});
+      },
+        render:function(){
+            return(
+                <form action="test_submit" method="get">
+                    <input type="text" value={this.state.name} placeholder="your name" onChange={this.handChangeOne}/>
+                    <input type="text" value={this.state.text} placeholder="say something..." onChange={this.handChangeTwo}/>
+                    <input type="submit" name="" value="post" />
+                </form>
+            )
+        }
+      });
+        var Conunter = React.createClass({
+            getInitialState:function(){
+                return{
+                    count:0
+                }
+            },
+            handClick:function(){
+                this.setState({
+                    count:this.state.count+1
+                })
+            },
+            render:function(){
+                return(
+                    <div onClick={this.handClick}>click me~  counts ={this.state.count}</div>
+                )
+            }
+        });
+      ReactDOM.render(
+        <CommentBox url='test.json' time={2000}/>,
+        document.getElementById("example")
+    );
+    </script>
+    <script>
+       
+    </script>
+</body>
+</html>

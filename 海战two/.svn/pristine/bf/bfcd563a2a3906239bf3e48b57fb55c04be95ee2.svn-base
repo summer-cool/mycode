@@ -1,0 +1,52 @@
+$(document).ready(function(){
+    $(".ld_li").click(function(){
+        var dNum = $(this).attr("dd");
+        $(".ld_div").removeClass("slider_div");
+        $(this).next().addClass("slider_div");
+        $(".ld_div").eq(dNum-1).find("img").addClass("ld_img_slider");
+        if (dNum==1) {
+            $(".ld_img_1").attr("src","imgs/001.jpg");
+            $(".ld_img_2").attr("src","imgs/02.jpg");
+            $(".ld_img_3").attr("src","imgs/03.jpg");
+            $(".ld_img_4").attr("src","imgs/04.jpg");
+            $(".ld_img_5").attr("src","imgs/05.jpg");
+        }else if (dNum==2) {
+            $(".ld_img_2").attr("src","imgs/002.jpg");
+            $(".ld_img_1").attr("src","imgs/01.jpg");
+            $(".ld_img_3").attr("src","imgs/03.jpg");
+            $(".ld_img_4").attr("src","imgs/04.jpg");
+            $(".ld_img_5").attr("src","imgs/05.jpg");
+        }else if (dNum==3) {
+            $(".ld_img_3").attr("src","imgs/003.jpg");
+            $(".ld_img_1").attr("src","imgs/01.jpg");
+            $(".ld_img_2").attr("src","imgs/02.jpg");
+            $(".ld_img_4").attr("src","imgs/04.jpg");
+            $(".ld_img_5").attr("src","imgs/05.jpg");
+        }else if (dNum==4) {
+            $(".ld_img_4").attr("src","imgs/004.jpg");
+            $(".ld_img_1").attr("src","imgs/01.jpg");
+            $(".ld_img_2").attr("src","imgs/02.jpg");
+            $(".ld_img_3").attr("src","imgs/03.jpg");
+            $(".ld_img_5").attr("src","imgs/05.jpg");
+        }else if (dNum==5) {
+            $(".ld_img_5").attr("src","imgs/005.jpg");
+            $(".ld_img_2").attr("src","imgs/02.jpg");
+            $(".ld_img_3").attr("src","imgs/03.jpg");
+            $(".ld_img_4").attr("src","imgs/04.jpg");
+            $(".ld_img_1").attr("src","imgs/01.jpg");
+        }
+    });
+      // video
+  var video;
+  $(".video_start").click(function(){
+    $('.video_bg').fadeIn();
+    $(".video_C").fadeIn();
+    $(document).find("video")[0].play();
+  });
+  $(".close").click(function(){
+    $('.video_bg').fadeOut();
+    $(".video_C").fadeOut();
+    video = $("#video")
+    $(document).find("video")[0].pause();
+  });
+})

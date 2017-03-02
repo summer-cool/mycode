@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>navalbattle</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src='js/reset.js'></script>
+    <script src='js/zepto.js'></script>
+    <script src='js/imgload.js'></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+    <div class="main_container">
+       <!-- 联系客服 -->
+        <div class="lxkf">
+            <div class="lxkf_l">
+              <p>聯繫</p>
+              <p>客服</p>
+            </div>
+            <div class="lxkf_arrowC">
+              <img class="arrow" src="imgs/arrow.png" alt="">
+            </div> 
+        </div>
+        <header id="header" class="header">
+            <!-- /header -->
+            <img class="pic" src="imgs/head.png" alt="">
+        </header>
+        <!-- 切换选项卡部分 -->
+        <div class="navpart">
+            <ul class="navUl">
+                <li class="navli_1">
+                  <a href="javascript:alertSlider();">
+                    <img src="imgs/navText_1.png" alt="">
+                  </a>
+                </li>
+              <!--   <li class="navli_2">
+                  <a href="javascript:alertSlider();">
+                    <img style="width:1.3rem;" src="imgs/navText_2.png" alt="">
+                  </a>
+                </li> -->
+                <!-- 游戏资讯链接 -->
+                <li class="navli_3">
+                  <a href="">
+                    <img src="imgs/navText_3.png" alt="">
+                  </a>
+                </li>
+                <!-- 游戏下载链接 -->
+                <li class="navli_4" style="border-right:none;">
+                  <a href="">
+                    <img src="imgs/navText_4.png" alt="">
+                  </a>
+                </li>
+            </ul>
+        </div>
+       <!--  FB部分 -->
+       <div class="fb_part">
+           <div class="fb_container">
+              <div class="fb-page" data-href="https://m.facebook.com/battleship.pro/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://m.facebook.com/battleship.pro/" class="fb-xfbml-parse-ignore"><a href="https://m.facebook.com/battleship.pro/">海戰傳奇</a></blockquote></div>
+           </div>
+           <div class="fb_btnC">
+               <a href="#">
+                   <img class="fb_btn" src="imgs/btn.png" alt="">
+               </a>
+           </div>
+       </div>
+    </div>
+    <div class="footerContainer">
+        <footer class="footer">
+            <p>
+              <img src="imgs/ft_logo.png" alt="">Copyright@2015-2020 SINCETIMES Co.,Ltd.
+            </p>
+        </footer>
+    </div>
+   <!--  图片加载动画 -->
+   <div class="spinner">
+      <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+    </div>
+    <div class="spinner_bg"></div>
+    <!-- 弹窗part-->
+    <div class="sliderOut">
+        <p>尚未開啟，敬請期待！</p>
+        <button class="closeBtn" type=""></button>
+    </div>
+    <!-- 联系客服弹窗 -->
+    <div class="publick_bg"></div>
+    <div class="kf_slider">
+        <p>客服郵箱：</p>
+        <p>warshipsaga_tw@sincetimes.com</p>
+        <button class="kf_closeBtn" type=""></button>
+    </div>
+</body>
+<script>
+  // 更改选项卡背景(手机端bug)
+  $(document).ready(function(){
+    $('.navUl a').bind('touchstart',function(){
+        var index = $(this).index()+2;
+        $('.navpart').css({
+          'background':'#074063',
+        })
+    });
+     $('.navUl a').bind('touchend',function(){
+        $('.navpart').css({
+          'background':'#d3d6db',
+        })
+    });
+  });
+ //巴哈姆特和魔方網未開啟（彈窗提示）
+   function alertSlider(){
+      $('.sliderOut_bg').show();
+      $('.publick_bg').show();
+      $('.sliderOut').show();
+   };
+   //关闭弹窗
+   $('.closeBtn').click(function(){
+      $('.sliderOut_bg').hide();
+      $('.publick_bg').hide();
+      $('.sliderOut').hide();
+   })
+</script>
+</html>

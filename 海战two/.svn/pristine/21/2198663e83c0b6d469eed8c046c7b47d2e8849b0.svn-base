@@ -1,0 +1,51 @@
+1.获取头像昵称
+url:http://123.56.13.70/get_profile_infos?
+参数示例：openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+返回结果
+{"result":1,
+"data":[
+"威小廉童鞋",
+"http://wx.qlogo.cn/mmopen/PiajxSqBRaEK3Jd3PHoaIHnOtHRkQIbnVicfNXsHyqh9Pc3JvnjKVd3lgVd7U9Uxh9qxJ0q3ktPDO7HUtC94HuSA/0"
+"1000"]}
+
+
+2.获取商店商品列表
+http://123.56.13.70/get_shop_infos
+参数示例：page_no=1  0为第一页 1为第二页
+返回结果：
+{"result":1,"data":[null,null],
+"data_other":
+{"goods_list":
+[{"sn":"11","goods_name":"奖品6","goods_desc":"奖品描述6","pic_url":"/upload/image/2017_01_16/13_52_52_715.png","points_need":1,"left_codes_num":5000},
+{"sn":"12","goods_name":"奖品7","goods_desc":"奖品描述7","pic_url":"/upload/image/2017_01_16/13_53_23_837.png","points_need":1,"left_codes_num":5000}]
+,"pages_num":2}}
+	
+3.查看积分	http://123.56.13.70/look_jifen/shop_01
+参数 openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+结果
+{"result":1,"data":50}
+
+4签到 http://123.56.13.70/qiandao/shop_01
+参数 openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+结果
+{"result":1,"data":60}
+result 1为第一次签到 2为不是第一次签到，0为今天已经签到
+data为最新的积分
+
+
+5.用积分兑换物品
+http://123.56.13.70/buy/shop_01
+参数openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+参数goods_sn=5
+结果
+{"result":2,"data":"points is not enough!"}
+{"result":1,"data":{"sn":"5","goods_name":"奖品1","goods_desc":"奖品描述1","pic_url":"/upload/image/2017_01_16/10_44_37_56.png","points_need":10}}
+结果状态说明：-3商店不存在;-2 openid为空;-1 openid,-4商品不存在,1成功,2积分不够,3没有库存
+
+6.查看兑换历史纪录
+http://123.56.13.70/buy_history/shop_01
+参数openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+结果{"result":1,"data":[{"sn":"5","code":"MDRMHXTR8J78CQ","pic_url":"/upload/image/2017_01_16/10_44_37_56.png","goods_name":"奖品1","goods_desc":"奖品描述1","time":1484536487425}]}
+
+
+7.排行榜

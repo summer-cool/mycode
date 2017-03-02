@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/liebiao.css">
+    <script src='js/reset.js'></script>
+    <script src='js/zepto.js'></script>
+    <script src='js/iscroll.js'></script>
+    <script src='js/imgload.js'></script>
+    <script type="text/javascript">
+
+
+    var myScroll;
+
+    function loaded () {
+    myScroll = new IScroll('#wrapper', { 
+            useTransition: false,
+            zoom:true,
+            click: true
+        });
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+</head>
+<body onload="loaded()">
+    <div class="main_container">
+    <!-- 联系客服 -->
+        <div class="lxkf">
+            <div class="lxkf_l">
+              <p>聯繫</p>
+              <p>客服</p>
+            </div>
+            <div class="lxkf_arrowC">
+              <img class="arrow" src="imgs/arrow.png" alt="">
+            </div> 
+        </div>
+    <div class="content">
+        <header id="header" class="header">
+            <!-- /header -->
+          <!--  资讯链接 -->
+            <a href="#">
+              <img class="lb_neirong" src="imgs/lb_zx.png" alt="">
+            </a>
+            <!-- 首页链接 -->
+            <a href="http://192.168.4.211/%E6%B5%B7%E6%88%982%E6%89%8B%E6%9C%BA%E5%AE%98%E7%BD%91/">
+              <img class="lb_img" src="imgs/zx_shouye.png" alt="">
+            </a>
+        </header>
+        <!-- 显示信息列表部分 -->
+        <div class="table_part">
+            <div id="wrapper">
+                <div id="scroller">
+                <!-- 信息部分 -->
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                    <ul>
+                    <a href="www.baidu.com">
+                      <li style="width:1.4rem;margin-right:0.2rem">[公告]</li> 
+                      <li style="width:4.58rem;text-align: left;">10月22日維護完畢</li>
+                      <li>2014-10-22</li> 
+                    </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--  图片加载动画 -->
+   <div class="spinner">
+      <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+    </div>
+    <div class="spinner_bg"></div>
+    <!-- 联系客服弹窗 -->
+    <div class="publick_bg"></div>
+    <div class="kf_slider">
+        <p>客服郵箱：</p>
+        <p>warshipsaga_tw@sincetimes.com</p>
+        <button class="kf_closeBtn" type=""></button>
+    </div>
+</body>
+</html>

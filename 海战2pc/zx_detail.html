@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/zx_detail.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content_C">
+            <div class="header">
+                <img class="hd_logo" src="imgs/logo.png" alt="">
+            </div>
+            <div class="nav_tab">
+                <ul>
+                    <a href="">
+                        <li class="nav_li">儲值購點</li>
+                    </a>
+                    <a href="">
+                        <li class="nav_li">客服反饋</li>
+                    </a>
+                    <a href="">
+                        <li class="nav_li">魔方網</li>
+                    </a> 
+                </ul>
+            </div>
+            <div class="zx_content">
+                <div class="zx_C">
+                    <div class="zx_nav">
+                        <a href=""><span class="zx_a">資訊詳情</span></a>
+                        <span class="zx_jt">></span>
+                        <a href=""><span class="sy_a">資訊</span></a>
+                         <span class="zx_jt">></span>
+                        <a href=""><span class="sy_a">首頁</span></a>
+                    </div>
+                    <div class="zx_Detial">
+                         <ul class="zx_dt_ul">
+                             <li class="dt_li_1">遊戲內容</li>
+                             <li class="dt_li_2">2016-10-05</li>
+                         </ul>
+                         <div class="dt_content">
+                             內容隔這呢..
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 服務窗 -->
+            <div class="fw_slider">
+                <div class="fw_cloose">
+                    <div class="triangle-right"></div>
+                </div>
+                <div class="fw_detial">
+                    <img class="fw_img_1" src="imgs/erweima.png" alt="">
+                    <a href="">
+                        <img class="fw_img_2" src="imgs/store_1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img class="fw_img_3" src="imgs/store_2.png" alt=""> 
+                    </a>
+                    <a href="">
+                        <img class="fw_img_4" src="imgs/btn_1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer_C">
+            <div class="footer">
+                <img src="imgs/ft_logo.png" alt="">
+                <span>Copyright@2015-2020 SINCETIMES Co.,Ltd.</span>
+            </div>
+        </div>
+    </div>
+</body>
+ <script>
+ $(document).ready(function(){
+    // 顯示隱藏服務窗
+    var fw = 1;
+    $('.fw_cloose').click(function(){
+        if (fw==1) {
+             $('.fw_slider').animate({
+                "right":"-140px"
+             });
+             $('.triangle-right').css({
+                "transform":"rotate(180deg)"
+             });
+             fw=0;
+        }else if (fw==0) {
+            $('.fw_slider').animate({
+                "right":"0"
+             });
+             $('.triangle-right').css({
+                "transform":"rotate(360deg)"
+             });
+             fw=1;
+        }
+    });
+     // 服务弹窗随动
+    $(window).scroll(function(){
+        var top = $("body").scrollTop()+10;
+        $('.fw_slider').css("top",""+top+"px")
+    });
+});
+</script>
+</html>

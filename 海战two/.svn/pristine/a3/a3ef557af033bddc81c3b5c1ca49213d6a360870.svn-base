@@ -1,0 +1,60 @@
+1.获取头像昵称
+url:http://123.56.13.70/get_profile_infos?
+参数示例：openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+返回结果
+{"result":1,
+"data":[
+"威小廉童鞋",
+"http://wx.qlogo.cn/mmopen/PiajxSqBRaEK3Jd3PHoaIHnOtHRkQIbnVicfNXsHyqh9Pc3JvnjKVd3lgVd7U9Uxh9qxJ0q3ktPDO7HUtC94HuSA/0"
+"1000"]}
+
+
+2.获取商店商品列表
+http://123.56.13.70/jztpy_shop/get_shop_infos
+参数示例：page_no=1  0为第一页 1为第二页
+返回结果：
+{"result":1,
+"data":["威小廉童鞋","http://wx.qlogo.cn/mmopen/PiajxSqBRaEK3Jd3PHoaIHnOtHRkQIbnVicfNXsHyqh9Pc3JvnjKVd3lgVd7U9Uxh9qxJ0q3ktPDO7HUtC94HuSA/0"],
+"data_other":{"goods_list":[{"sn":"13","goods_name":"商品1","goods_desc":"商品描述1","pic_url":"/upload/image/2017_01_18/11_22_59_903.png","points_need":1,"left_codes_num":5000,"status":0},
+{"sn":"14","goods_name":"商品2","goods_desc":"商品描述2","pic_url":"/upload/image/2017_01_18/11_23_42_8.png","points_need":2,"left_codes_num":4999,"status":1},
+{"sn":"15","goods_name":"商品3","goods_desc":"商品描述3","pic_url":"/upload/image/2017_01_18/11_24_15_433.png","points_need":3,"left_codes_num":10000,"status":0}],
+"pages_num":1}}
+	
+3.查看积分	http://123.56.13.70/jztpy_shop/look_jifen
+参数 openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+结果
+{"result":1,
+"data":["高晗","http://wx.qlogo.cn/mmopen/mtTVSzTDuyZKDxSXwt72DriavbNn9ic2nlMTXOr8mgHEEeVR7Ozn6zo6ZBkzgLMbI8jRorp5d5Jq6ghO3J2s7dCciakf7HQxzgic/0"],
+"data_other":80}
+
+4签到 http://123.56.13.70/jztpy_shop/qiandao
+参数 openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+结果
+{"result":2,"data":10,"data_other":172}
+result 1为第一次签到 2为不是第一次签到，0为今天已经签到
+data成功添加的积分‘
+dataother为最新的积分
+
+
+5.用积分兑换物品
+http://123.56.13.70/jztpy_shop/buy
+参数openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+参数goods_sn=5
+结果
+{"result":2,"data":"points is not enough!"}
+{"result":1,"data":{"sn":"5","goods_name":"奖品1","goods_desc":"奖品描述1","pic_url":"/upload/image/2017_01_16/10_44_37_56.png","points_need":10}}
+结果状态说明：-3商店不存在;-2 openid为空;-1 openid,-4商品不存在,1成功,2积分不够,3没有库存4已经领取
+
+6.查看兑换历史纪录
+http://123.56.13.70/jztpy_shop/buy_history
+参数openid=oSSKNwL2ckTrOtptEwLHeYRs9eIc
+结果{"result":1,"data":[{"sn":"5","code":"MDRMHXTR8J78CQ","pic_url":"/upload/image/2017_01_16/10_44_37_56.png","goods_name":"奖品1","goods_desc":"奖品描述1","time":1484536487425}]}
+
+
+7.排行榜
+http://123.56.13.70/jztpy_shop/jifen_rank
+参数：openid=oSSKNwA3JkCcGZrHkjFvT0aFUgr4
+结果：
+{"result":1,"data":[
+{"name":"高晗","pic":"http://wx.qlogo.cn/mmopen/mtTVSzTDuyZKDxSXwt72DriavbNn9ic2nlMTXOr8mgHEEeVR7Ozn6zo6ZBkzgLMbI8jRorp5d5Jq6ghO3J2s7dCciakf7HQxzgic/0","score":100},
+{"name":"威小廉童鞋","pic":"http://wx.qlogo.cn/mmopen/PiajxSqBRaEK3Jd3PHoaIHnOtHRkQIbnVicfNXsHyqh9Pc3JvnjKVd3lgVd7U9Uxh9qxJ0q3ktPDO7HUtC94HuSA/0","score":70}]}

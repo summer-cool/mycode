@@ -1,0 +1,256 @@
+#headTitle{
+  float:none;
+  margin-left:0;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+[data-dpr="1"] .CZ_text{
+    font-size:15px;
+}
+[data-dpr="3"] .CZ_text{
+    font-size:45px;
+}
+.CZ_text{
+    color:red;
+    font-size:30px;
+    text-align:center;
+}
+.serverTishi{
+    margin-bottom:0px;
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/*index*/
+
+[data-dpr="1"] .ChooseUl{
+    font-size:16px;
+}
+[data-dpr="3"] .ChooseUl{
+    font-size:48px;
+}
+.ChooseUl{
+    float:left;
+    display:inline-block;
+    font-size:33px;
+    color:#1a72a5;
+    font-weight:bold;
+    overflow:hidden;
+    line-height:1.306667rem;
+    position:relative;
+    display:none;
+}
+
+#headTitle{
+    font-size:42px;
+    line-height:1.306667rem;
+    font-weight:bold;
+}
+[data-dpr="1"] #headTitle{
+    font-size:21px;
+}
+[data-dpr="3"] #headTitle{
+    font-size:63px;
+}
+.ChooseUl li{
+    float:left;
+    margin-left:0.573333rem;
+}
+.ChooseUl img{
+    width:0.293333rem;
+    height:0.186667rem;
+    margin-left:0.213333rem;
+    -webkit-transition:all 0.5s linear;
+}
+
+.diquNav{
+    position:absolute;
+    left:0.213333rem;
+    top:2.853333rem;
+    display:none;
+}
+.upsanjiao{
+    width: 0;
+    height: 0;
+    margin:0 auto;
+    border-left: 0.2rem solid transparent;
+    border-right: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid #C7E1EE;
+}
+[data-dpr="1"] .diquNav li{
+    font-size:14px;
+} 
+[data-dpr="2"] .diquNav li{
+    font-size:28px;
+} 
+[data-dpr="3"] .diquNav li{
+    font-size:42px;
+} 
+.diquNav li{
+    display:inline-block;
+    width:2.5rem;
+    height:1rem;  
+    line-height:1rem;
+    border-bottom:1px dashed gray;
+    text-align:center;
+}
+.diquNav li:last-child{
+    border-bottom:none;
+}
+.diquNav ul{
+    width:3rem;
+    background:#C7E1EE;
+    text-align:center;
+    border-radius:0.2rem;
+    min-height:1rem;
+    color:#146EA3;
+}
+.uidContainer{
+    width:9.106667rem;
+    height:5.493333rem;
+    margin:0 auto;
+    /*margin-top:3rem;*/
+}
+.uidContainer li{
+    width:100%;
+}
+.uid_li_1{
+    height:0.533333rem;
+    line-height:0.533333rem;
+    font-size:40px;
+}
+[data-dpr="1"] .uid_li_1{
+    font-size:20px;
+}
+[data-dpr="3"] .uid_li_1{
+    font-size:60px;
+}
+.uid_input{
+    width:100%;
+    height:1.066667rem;
+    line-height:1.066667rem;
+    background:#c2c2c2;
+    font-size:40px;
+    margin-top: 0.56rem;
+    outline:none;
+    border:none;
+    text-align:center;
+}
+[data-dpr="1"] .uid_input{
+    font-size:20px;
+}
+[data-dpr="3"] .uid_input{
+    font-size:60px;
+}
+[data-dpr="1"] .uid_li_3{
+    font-size:12px;
+}
+[data-dpr="3"] .uid_li_3{
+    font-size:36px;
+}
+.uid_li_3{
+    height:0.4rem;
+    text-align:center;
+    font-size:24px;
+    margin:0.333333rem 0 0.6rem 0;
+}
+.uid_li_3 span:nth-child(1){
+    background:#d81313;
+    color:white;
+}
+.uid_li_3 span:nth-child(2){
+    color:#d81313;
+    font-weight:bold;
+}
+[data-dpr="1"] .uid_button{
+    font-size:19px;
+}
+[data-dpr="3"] .uid_button{
+    font-size:57px;
+}
+.uid_button{
+    outline:none;
+    border:none;
+    color:white;
+    border-radius:10px;
+    width:9.12rem;
+    height:1.12rem;
+    background:#ff7d13;
+    line-height:1.12rem;
+    font-size:38px;
+}
+.chuzhifangshi{
+  display:none;
+}
+/*储值金额部分*/
+.chuzhijinePart{
+  display:none;
+}
+.hot_img{
+    position:absolute;
+    right:0;
+    top:0;
+    width:0.986667rem;
+    height:0.96rem;
+    display:inline-block;
+}
+/*确认订单部分*/
+.last_page{
+  display:none;
+}
+.dindan{
+    width:9.106667rem;
+    height:2.586667rem;
+    margin:0 auto;
+}
+[data-dpr="1"] .uid_li_4{
+    font-size:12px;
+}
+[data-dpr="3"] .uid_li_4{
+    font-size:36px;
+}
+.uid_li_4{
+    text-align:center;
+    font-size:24px;
+    margin:0 0 0.6rem 0;
+}
+.uid_li_4 span:nth-child(1){
+    background:#d81313;
+    color:white;
+}
+.uid_li_4 span:nth-child(2){
+    color:#d81313;
+    font-weight:bold;
+}
+[data-dpr="1"] .sure_button{
+    font-size:19px;
+}
+[data-dpr="3"] .sure_button{
+    font-size:57px;
+}
+.sure_button{
+    outline:none;
+    border:none;
+    color:white;
+    border-radius:10px;
+    width:9.12rem;
+    height:1.12rem;
+    background:#ff7d13;
+    line-height:1.12rem;
+    font-size:38px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <script src="js/reset.js"></script>
+    <script src="js/zepto.js"></script>
+    <!-- <script src="js/iscroll.js"></script> -->
+    <script type="text/javascript">
+        // 页面加载
+    document.onreadystatechange = subSomething;
+
+    function subSomething() {
+        if (document.readyState == "complete") { //当页面加载状态为完全结束时隐藏加载动画
+            $('.spinner').hide();
+            $('.spinner_bg').hide();
+        };
+    };
+    //加载时间过长关闭加载动画
+     if (setT) {
+            clearTimeout(setT);
+        };
+        var setT = setTimeout(function() {
+            $('.spinner').hide();
+            $('.spinner_bg').hide();
+    }, 10000); 
+</script>
+</head>
+<body>
+    <div class="container">
+        <!-- 分享和主页跳转 -->
+        <div class="fx_tz_C">
+            <!-- 分享 -->
+            <img class="share" src="imgs/share.png" alt="">
+            <!-- 跳转去主页 -->
+            <a href="index.html">
+                <img class="lk_home" src="imgs/home.png" alt="">
+            </a>
+        </div>
+        <div class="dt_hd_C">
+            <div class="dd_nav">
+               <a href="index.html">TOP</a>
+               <span>>></span>
+               <span>xxxx</span>
+            </div>
+        </div>
+        <div class="dd_text_C">
+            <div id="wrapper">
+            <div id="scroller">
+               <!-- 文本内容区 -->
+               <div class="text_titile">
+                   【重要】サーバー統合延期のお知らせ
+               </div>
+               <p class="dd_tt_detail">
+                   2016-06-27投稿　《三国真龍伝》公式サイト
+               </p>
+               <p class="dd_text">
+                   日頃より「三国真龍伝」をプレイしていただき誠にありがとうございます。
+                    この度、「三国真龍伝」では2016年6月27日にサーバー統合作業を予定しておりましたが、
+                    作業中技術的な不具合を確認し、今回の統合作業の実施を中止し延期することになりました。
+                    今後サーバー統合作業の実施日程は決定次第、ご連絡致します。
+                    実施日程が変更となり大変申し訳ございません。
+                    今後とも「三国真龍伝」をよろしくお願いいたします。
+               </p>
+             <!--    <p class="dd_text">
+                   日頃より「三国真龍伝」をプレイしていただき誠にありがとうございます。
+                    この度、「三国真龍伝」では2016年6月27日にサーバー統合作業を予定しておりましたが、
+                    作業中技術的な不具合を確認し、今回の統合作業の実施を中止し延期することになりました。
+                    今後サーバー統合作業の実施日程は決定次第、ご連絡致します。
+                    実施日程が変更となり大変申し訳ございません。
+                    今後とも「三国真龍伝」をよろしくお願いいたします。
+               </p> -->
+                <!-- <p class="dd_text">
+                   日頃より「三国真龍伝」をプレイしていただき誠にありがとうございます。
+                    この度、「三国真龍伝」では2016年6月27日にサーバー統合作業を予定しておりましたが、
+                    作業中技術的な不具合を確認し、今回の統合作業の実施を中止し延期することになりました。
+                    今後サーバー統合作業の実施日程は決定次第、ご連絡致します。
+                    実施日程が変更となり大変申し訳ございません。
+                    今後とも「三国真龍伝」をよろしくお願いいたします。
+               </p> -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div class="bottom_C">
+        Copyright@2015-2020 SINCETIMES Co.,Ltd.
+    </div>
+    <!-- 加载动画 -->
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+        </div>
+    <div class="spinner_bg"></div>
+</body>
+</html>

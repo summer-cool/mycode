@@ -1,0 +1,28 @@
+$(document).ready(function(){
+    $('.down_btn').bind("touchstart",function(){
+        $(this).css("color","white");
+        $(this).bind("touchend",function(){
+            $(this).css("color","#313131");
+        });
+    });
+    $('.join_btn').bind("touchstart",function(){
+        $(this).css("color","white");
+        $(this).bind("touchend",function(){
+            $(this).css("color","#313131");
+        });
+    });
+    $('.mid_img').bind("touchstart",function(){
+        $(this).css({
+            "transform":"scale(0.9)",
+            "-webkit-transform":"scale(0.9)",
+            "-moz-transform":"scale(0.9)"
+        });
+    });
+    $('.mid_img').bind("touchend",function(){
+         $(this).css({
+            "transform":"scale(1)",
+            "-webkit-transform":"scale(1)",
+            "-moz-transform":"scale(1)",
+        });
+    });
+})

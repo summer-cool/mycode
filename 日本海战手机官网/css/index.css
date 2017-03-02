@@ -1,0 +1,185 @@
+.head_C{
+    width:10.0rem;
+    height:5.6rem;
+    background:url(../imgs/hd_bg.png) no-repeat;
+    background-size:cover;
+}
+.container{
+    background:url(../imgs/bg.png) no-repeat;
+    background-size:cover;
+}
+.head_video{
+    width:4.84rem;
+    height:2.693333rem;
+    margin:2.066667rem 0 0 0.36rem;
+    float:left;
+}
+.google{
+    width:1.866667rem;
+    height:0.666667rem;
+    float:left;
+    margin:4.133333rem 0 0 -1.866667rem;
+}
+.apple{
+    width:1.866667rem;
+    height:0.666667rem;
+    float:left;
+    margin:3.36rem 0 0 0.266667rem;
+}
+.message_C{
+    width:10.0rem;
+    height:5.5rem;
+    margin-top:0.853333rem;
+    background:url(../imgs/mg_bg.png) no-repeat;
+    background-size:cover;
+}
+.mg_tb{
+    width:10.0rem;
+    height:1rem;
+}
+.mg_tb li{
+    height:1rem;
+    line-height:1rem;
+    text-align:center;
+    width:33.333%;
+}
+[data-dpr="1"] .mg_tb_li{
+    font-size:14px;
+}
+[data-dpr="3"] .mg_tb_li{
+    font-size:56px;
+}
+.mg_tb_li{
+    font-size:28px;
+    float:left;
+    background:#bac2be;
+}
+.mg_sp_li{
+    background:none;
+}
+.mg_div{
+    width:9.533333rem;
+    height:3.4rem;
+    margin:0 auto;
+    margin-top:0.4rem;
+    overflow-y:scroll;
+    display:none;
+}
+.mg_detial{
+    width:100%;
+    margin:0.2rem 0 0.2rem 0;
+    height:0.5rem;
+    border-bottom:1px solid #bbbbbb;
+}
+[data-dpr="1"] .mg_detial li{
+    font-size:16px;
+}
+[data-dpr="3"] .mg_detial li{
+    font-size:48px;
+}
+.mg_detial li{
+    float:left;
+    height:0.5rem;
+    line-height:0.5rem;
+}
+.mg_dt_1{
+    width:2rem;
+    font-size:32px;
+}
+.mg_dt_2{
+    width:7.5rem;
+    font-size:32px;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.mg_show_div{
+    display:block;
+}
+[data-dpr="1"] .mg_link{
+    font-size:12px;
+}
+[data-dpr="3"] .mg_link{
+    font-size:36px;
+}
+.mg_link{
+    width:2.5rem;
+    font-size:24px;
+    float:right;
+    display:inline-block;
+}
+.twitter_C{
+    width:10.0rem;
+    height:6.133333rem;
+    margin-top:0.76rem;
+}
+[data-dpr="1"] .twitter_title{
+    font-size:12px;
+}
+[data-dpr="3"] .twitter_title{
+    font-size:36px;
+}
+.twitter_title{
+    width:1.733333rem;
+    height:0.466667rem;
+    background:#8b8f8c;
+    border-radius:5px;
+    line-height:0.466667rem;
+    font-size:24px;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+.twitter{
+    width:10.0rem;
+    height:5.5rem;
+    overflow-y:scroll;
+    position:relative;
+    background:#dddcdc;
+    box-shadow:0 0 10px 5px #979e9c;
+}
+.swiper-container{
+    width:10.0rem;
+    height:3.2rem;
+}
+.swiper-slide img{
+    width:100%;
+    height:3.2rem;
+}
+.bottom_text_C{
+    width:10rem;
+    height:2.133333rem;
+    background:#d4d3d3;
+    overflow:hidden;
+}
+.icon{
+    width:1.6rem;
+    height:1.6rem;
+    margin:0.266667rem 0 0 0.266667rem;
+    float:left;
+}
+.gg_store{
+    width:1.933333rem;
+    height:0.75rem;
+    float:left;
+    margin:0.266667rem 0 0 0.266667rem;
+}
+.ap_store{
+    width:1.933333rem;
+    height:0.75rem;
+    float:left;
+    margin:1.106667rem 0 0 -1.93333rem;
+}
+.bt_rt_text_C{
+    width:5rem;
+    height:1.52rem;
+    float:right;
+    margin-top:0.333333rem;
+}
+.tx_img{
+    width:5rem;
+    height:1.4rem;
+}
+#twitter-widget-0{
+    height:300px;
+}

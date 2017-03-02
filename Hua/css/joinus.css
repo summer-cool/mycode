@@ -1,0 +1,747 @@
+.fullslider{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+} 
+.video_bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 50;
+    -moz-box-shadow: inset 0px 0px 200px #000000;
+    -webkit-box-shadow: inset 0px 0px 200px #000000;
+    box-shadow: inset 0px 0px 200px #000000;
+    z-index: 2;
+    top: 0px;
+}
+#c_video{
+    width:100%;
+    height:auto;
+    position:static;
+    display:inline-block;
+}
+@media (max-width:520px){
+    .fullslider{
+        height:205px;
+    }
+    #c_video{
+        display:none;
+    }
+    .hide_bg{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:205px;
+        z-index:1;
+        background:url(../imgs/join.jpg) no-repeat;
+        background-size:100% 100%;
+    }
+}
+.hide_bg{
+    padding:20px 16%;
+    width:100%;
+    position:absolute;
+    z-index:3;
+    text-align:center;
+    top: calc(42% - 0px);
+}
+.hide_bg a{
+    width:145px;
+    height:40px;
+    line-height:40px;
+    border:1px solid white;
+    display:inline-block;
+    color:white;
+    margin-top:10%;
+}
+.hide_bg a:hover{
+    background:#b3b5b7;
+}
+.hide_bg img{
+    width:537px;
+    height:68px;
+}
+ .hide_a{
+        margin-right:48px;
+    }
+@media (max-width:930px){
+    .hide_bg img{
+        width:300px;
+        height:40px;
+    }
+    .hide_bg a {
+        width: 75px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid white;
+        display: inline-block;
+        color: white;
+        margin-top: 5%;
+    }
+}
+@media (min-width:1500px){
+    .fullslider{
+        height:700px !important;
+    }
+}
+@media (min-width:1200px){
+    .fullslider{
+        height:600px;
+    }
+}
+@media (max-width:960px){
+    .fullslider{
+        height:360px;
+    }
+}
+@media (max-width:640px){
+    .fullslider{
+        height:320px;
+    }
+}
+@media (max-width:520px){
+    .fullslider{
+        height:240px;
+    }
+    .hide_bg img{
+        width:235px;
+        height:30px;
+    }
+    #c_video{
+        display:none;
+    }
+    .hide_bg{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:240px;
+        z-index:1;
+        background:url(../imgs/join.jpg) no-repeat;
+        background-size:100% 100%;
+    }
+    .hide_bg{
+        padding:80px 16%;
+        width:100%;
+        position:absolute;
+        z-index:3;
+        text-align:center;
+        top: 0px;
+    }
+    .hide_bg a{
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .hide_a{
+        margin-right:10px;
+    }
+}
+.show_us_C{
+    background:url(../imgs/join_bg.jpg) no-repeat;
+    background-size:cover;
+}
+.show_us{
+    padding:20px 16%;
+}
+.show_us p{
+    text-align:center;
+    color:#646566;
+    font-size:12px;
+}
+.circle_C{
+    padding:20px 12% 40px 12%;
+}
+.rota_div{
+    width:140px;
+    height:140px;
+    position:relative;
+    color:#66bef4;
+    margin:0 auto;
+}
+.circle_div{
+    width:140px;
+    height:140px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    transform:rotateZ(180deg);
+    -webkit-transform:rotateZ(180deg);
+    -moz-transform:rotateZ(180deg);
+    -ms-transform:rotateZ(180deg);
+    transform-origin:center;
+}
+.circle{
+    width:140px;
+    height:70px;
+}
+.circle_box{
+    padding-bottom:30px;
+}
+.text_circle_C{
+    position:absolute;
+    top:70px;
+    left:0;
+    z-index:2;
+    width:140px;
+    height:70px;
+    background:white;
+}
+.text_circle_C p{
+    text-align:center;
+    font-size:12px;
+    color:#23abf1;
+    margin:0;
+    line-height:24px;
+}
+.circle_num{
+    text-align:center;
+    padding-top:40px;
+}
+.rotateZ{
+    animation:rota 1.5s ease-in-out forwards;
+    -webkit-animation:rota 1.5s ease-in-out forwards;
+    -moz-animation:rota 1.5s ease-in-out forwards;
+    -ms-animation:rota 1.5s ease-in-out forwards;
+}
+.circle_1{
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+}
+.circle_2{
+    animation-delay:2.5s;
+    -webkit-animation-delay:2.5s;
+    -moz-animation-delay:2.5s;
+    -ms-animation-delay:2.5s;
+}
+.circle_3{
+    animation-delay:4s;
+    -webkit-animation-delay:4s;
+    -moz-animation-delay:4s;
+    -ms-animation-delay:4s;
+}
+.circle_4{
+    animation-delay:5.5s;
+    -webkit-animation-delay:5.5s;
+    -moz-animation-delay:5.5s;
+    -ms-animation-delay:5.5s;
+}
+@keyframes rota{
+    0%{
+        transform:rotateZ(180deg);
+        -webkit-transform:rotateZ(180deg);
+        -moz-transform:rotateZ(180deg);
+        -ms-transform:rotateZ(180deg);
+        transform-origin:center;
+        -webkit-transform-origin:center;
+        -moz-transform-origin:center;
+        -ms-transform-origin:center;
+    }
+    100%{
+        transform:rotateZ(360deg);
+        -webkit-transform:rotateZ(360deg);
+        -moz-transform:rotateZ(360deg);
+        -ms-transform:rotateZ(360deg);
+        transform-origin:center;
+        -webkit-transform-origin:center;
+        -moz-transform-origin:center;
+        -ms-transform-origin:center;
+    }
+}
+.our_day{
+    text-align:center;
+    padding:0 16%;
+   padding-top:36px;
+}
+.our_day span{
+    display:inline-block;
+    width:93px;
+    height:26px;
+    line-height:26px;
+    font-size:12px;
+    color:#23abf1;
+    border:1px solid #23abf1;
+    margin-top:36px;
+    cursor:pointer;
+}
+/*我们的日常*/
+.join_us_2{
+    display:none;
+}
+.welife{
+    position:relative;
+    left:0;
+    top:0;
+    min-height:660px;
+    width:100%;
+    background:url(../imgs/welife_bg_2.jpg) no-repeat;
+    background-size: cover;
+    background-position:center center;
+    z-index:990;
+}
+.fenqu_C{
+    width:100%;
+}
+.close_btn{
+    width:52px;
+    height:52px;
+    position:absolute;
+    right:20px;
+    top:20px;
+    z-index:990;
+    cursor:pointer;
+}
+.fenqu{
+    text-align:center;
+    background:url(../imgs/fenqu_bg.png) repeat-x;
+    height:68px;
+    background-size:cover;
+    background-position:center center;
+    line-height:68px;
+    cursor:pointer;
+}
+.fenqu:hover{
+    background:url(../imgs/fenqu_choose.png) repeat-x;
+    background-size:cover;
+    background-position:center center;
+}
+.we{
+    display:inline-block;
+}
+.sanjiao{
+    display:none;
+}
+.show_sanjiao{
+    display:inline-block;
+}
+.fenqu_border{
+    float:right;
+    margin-top:5px;
+}
+.pc_welife{
+    display:none;
+}
+@media(min-width:900px){
+    .pc_welife{
+        display: block;
+    }
+    /*我们的环境*/
+    .we_huanjin{
+        display:none;
+    }
+    .we_day{
+        width:768px;
+        height:600px;
+        margin:0 auto;
+        position:relative;
+    }
+    .hj_img{
+        position:absolute;
+        z-index:1;
+        cursor:pointer;
+        transition:all 0.5s ease-in-out;
+        -webkit-transition:all 0.5s ease-in-out;
+        -moz-transition:all 0.5s ease-in-out;
+        -ms-transition:all 0.5s ease-in-out;
+    }
+    .hj_text_1{
+        width:240px;
+        height:54px;
+    }
+    .hj_img_1{
+        left:0;
+        top:177px;
+        opacity:0.3;
+        filter:alpha(opacity=30);
+    }
+    .hj_img_2{
+        left:0;
+        top:379px;
+        opacity:0.5;
+        filter:alpha(opacity=50);
+    }
+    .hj_img_3{
+        left:300px;
+        top:60px;
+        z-index:2;
+    }
+    .hj_img_4{
+        left:300px;
+        top:340px;
+        z-index:3;
+        opacity:0.4;
+        filter:alpha(opacity=40);
+    }
+    .hj_img_5{
+        left:400px;
+        top:332px;
+        z-index:3;
+    }
+    .hj_img_6{
+        left:500px;
+        top:100px;
+        z-index:1;
+            opacity:0.5;
+        filter:alpha(opacity=50);
+    }
+    .hj_img_7{
+        left: 587px;
+        top: 338px;
+        z-index: 2;
+        opacity:0.5;
+        filter:alpha(opacity=50);
+    }
+    .hj_img_8{
+        left:85px;
+        top:256px;
+        z-index:3;
+    }
+    .hj_img_9{
+         left:250px;
+        top:256px;
+        z-index:1;
+        opacity:0.5;
+        filter:alpha(opacity=50);
+    }
+    .hj_img_10{
+        left:158px;
+        top:125px;
+        z-index:1;
+    }
+    .hj_img_11{
+        left:480px;
+        top:10px;
+        z-index:1;
+    }
+    .hj_img_12{
+        left:320px;
+        top:180px;
+        z-index:1;
+    }
+    .hj_text_2{
+        position:absolute;
+        bottom:20px;
+        right:0;
+    }
+    /*我们的帅哥美女*/
+     .sg_img{
+        position:absolute;
+        z-index:1;
+        cursor:pointer;
+        transition:all 0.5s ease-in-out;
+        -webkit-transition:all 0.5s ease-in-out;
+        -moz-transition:all 0.5s ease-in-out;
+        -ms-transition:all 0.5s ease-in-out;
+    }
+    .we_gege{
+        display:none;
+    }
+    .sg_img_1{
+        left:0;
+        top:177px;
+        opacity:0.3;
+        filter:alpha(opacity=30);
+    }
+    .sg_img_2{
+        left:0;
+        top:379px;
+        opacity:0.5;
+        filter:alpha(opacity=50);
+    }
+    .sg_img_3{
+        left:300px;
+        top:60px;
+        z-index:2;
+    }
+    .sg_img_4{
+        left:300px;
+        top:420px;
+        z-index:3;
+        opacity:0.4;
+        filter:alpha(opacity=40);
+    }
+    .sg_img_5{
+        left: 420px;
+        top: 400px;
+        z-index: 3;
+    }
+    .sg_img_6{
+        left: 604px;
+        top: 60px;
+        z-index: 1;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .sg_img_7{
+        left: 587px;
+        top: 392px;
+        z-index: 1;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .sg_img_8{
+        left:85px;
+        top:256px;
+        z-index:3;
+    }
+    .sg_img_9{
+        left: 165px;
+        top: 407px;
+        z-index: 4;
+    }
+    .sg_img_10{
+        left: 108px;
+        top: 66px;
+        z-index: 1;
+    }
+    .sg_img_11{
+        left:480px;
+        top:10px;
+        z-index:1;
+    }
+    .sg_img_12{
+        left:320px;
+        top:180px;
+        z-index:1;
+    }
+    .sg_img_13{
+        left:320px;
+        top:180px;
+        z-index:1;
+    }
+    .sg_text_2{
+        position:absolute;
+        bottom:20px;
+        right:0;
+    }
+    /*我们的美食*/
+     .ms_img{
+        position:absolute;
+        z-index:1;
+        cursor:pointer;
+        transition:all 0.5s ease-in-out;
+        -webkit-transition:all 0.5s ease-in-out;
+        -moz-transition:all 0.5s ease-in-out;
+        -ms-transition:all 0.5s ease-in-out;
+    }
+    .we_ms{
+        display:none;
+    }
+    .ms_img_1{
+        left:0;
+        top:177px;
+        opacity:0.3;
+        filter:alpha(opacity=30);
+    }
+    .ms_img_2{
+        left: 80px;
+        top: 300px;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .ms_img_3{
+        left:240px;
+        top:60px;
+        z-index:2;
+    }
+    .ms_img_4{
+        left:300px;
+        top:420px;
+        z-index:3;
+        opacity:0.4;
+        filter:alpha(opacity=40);
+    }
+    .ms_img_5{
+        left: 420px;
+        top: 400px;
+        z-index: 3;
+    }
+    .ms_img_6{
+        left: 530px;
+        top: 177px;
+        z-index: 1;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .ms_img_7{
+        left: 587px;
+        top: 392px;
+        z-index: 3;
+    }
+    .ms_img_8{
+        left:85px;
+        top:256px;
+        z-index:3;
+    }
+    .ms_img_9{
+        left: 200px;
+        top: 350px;
+        z-index: 4;
+    }
+    .ms_img_10{
+        left: 108px;
+        top: 66px;
+        z-index: 1;
+    }
+    .ms_img_11{
+        left:480px;
+        top:10px;
+        z-index:1;
+    }
+    .ms_img_12{
+        left: 500px;
+        top: 350px;
+        z-index: 1;
+        opacity:0.4;
+        filter:alpha(opacity=50);
+    }
+    .ms_img_13{
+        left: 320px;
+        top: 238px;
+        z-index: 1;
+        opacity:0.4;
+        filter:alpha(opacity=50);
+    }
+    .ms_text_2{
+        position:absolute;
+        bottom:20px;
+        right:0;
+    }
+      /*我们的生活方式*/
+     .sh_img{
+        position:absolute;
+        z-index:1;
+        cursor:pointer;
+        transition:all 0.5s ease-in-out;
+        -webkit-transition:all 0.5s ease-in-out;
+        -moz-transition:all 0.5s ease-in-out;
+        -ms-transition:all 0.5s ease-in-out;
+    }
+    .we_sh{
+        display:none;
+    }
+    .sh_img_1{
+        left:0;
+        top:177px;
+        opacity:0.3;
+        filter:alpha(opacity=30);
+    }
+    .sh_img_2{
+        left: 80px;
+        top: 300px;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .sh_img_3{
+        left:240px;
+        top:60px;
+        z-index:2;
+    }
+    .sh_img_4{
+        left:300px;
+        top:420px;
+        z-index:3;
+        opacity:0.4;
+        filter:alpha(opacity=40);
+    }
+    .sh_img_5{
+       left: 580px;
+        top: 280px;
+        opacity:0.4;
+        filter:alpha(opacity=40);
+    }
+    .sh_img_6{
+        left: 530px;
+        top: 177px;
+        z-index: 1;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .sh_img_7{
+        left: 240px;
+        top: 220px;
+        z-index: 1;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .sh_img_8{
+        left:85px;
+        top:256px;
+        z-index:3;
+    }
+    .sh_img_9{
+        left: 200px;
+        top: 400px;
+        z-index: 4;
+    }
+    .sh_img_10{
+        left: 108px;
+        top: 66px;
+        z-index: 1;
+    }
+    .sh_img_11{
+        left:480px;
+        top:10px;
+        z-index:1;
+    }
+    .sh_img_12{
+        left: 500px;
+        top: 427px;
+        z-index: 3;
+    }
+    .sh_img_13{
+        left: 380px;
+        top: 238px;
+        z-index: 3;
+    }
+    .sh_text_2{
+        position:absolute;
+        bottom:20px;
+        right:0;
+    }
+    .welifi_show{
+        display:block;
+        animation:fadeIn 0.5s ease-in-out;
+        -webkit-animation:fadeIn 0.5s ease-in-out;
+        -moz-animation:fadeIn 0.5s ease-in-out;
+        -ms-animation:fadeIn 0.5s ease-in-out;
+    }
+}
+
+.img_hover{
+    z-index:4;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+.img_back{
+    z-index:1;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+
+@media(max-width:900px){
+    .our_day span{
+        display:none;
+    }
+    .join_us_2{
+        display:none !important;
+    }
+     .join_us_1{
+        display:block !important;
+    }
+}

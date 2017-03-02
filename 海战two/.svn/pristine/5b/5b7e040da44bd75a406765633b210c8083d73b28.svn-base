@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>剑指太平洋-资讯列表</title>
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/reset.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/news.js"></script>
+</head>
+<body>
+<div class="container">
+   <!-- head -->
+<div class="head">
+    <div class="head_box">
+        <img class="icon_1" src="imgs/icon_1.png" alt="">
+        <a href="#">
+            <button class="down_btn" type="">游戏下载</button>
+        </a>
+        <div class="head_T">
+            <p class="hd_sp_1">舰指太平洋</p>
+            <p class="hd_sp_2">军事题材策略卡牌手游</p>
+        </div>
+    </div>
+</div>
+<div class="container_news">
+    <div class="title_C">
+        <div class="title">
+            <img  src="imgs/arrow_03.png" alt="">
+            <span class="back">返回</span>
+            <span class="title_text">综合资讯</span>
+        </div>
+    </div>
+    <div class="news">
+        <ul style="border-top:1px solid #a1a1a1;">
+            <a href="#">
+                <li class="news_title">《舰指太平洋》最新玩法震撼上线打算打算打算的撒打算</li>
+            </a>
+            <li class="news_t">xxxx运营团队 <span>08/02</span></li>
+        </ul>
+        <ul style="border-top:1px solid #a1a1a1;">
+            <a href="#">
+                <li class="news_title">《舰指太平洋》最新玩法震撼上线打算打算打算大声道的</li>
+            </a>
+            <li class="news_t">xxxx运营团队 <span>08/02</span></li>
+        </ul>
+        <ul style="border-top:1px solid #a1a1a1;">
+            <a href="#">
+                <li class="news_title">《舰指太平洋》最新玩法震撼上线打算打大声道算打算的</li>
+            </a>
+            <li class="news_t">xxxx运营团队 <span>08/02</span></li>
+        </ul>
+        <ul style="border-top:1px solid #a1a1a1;">
+            <a href="#">
+                <li class="news_title">《舰指太平洋》最新玩法震撼上线打撒打算打算打算的</li>
+            </a>
+            <li class="news_t">xxxx运营团队 <span>08/02</span></li>
+        </ul>
+    </div>
+    <div class="page_control">
+        <ul>
+            <li class="c_sy">首页</li>
+            <li class="c_befor">上一页</li>
+            <li class="c_next">下一页</li>
+            <li class="c_last">尾页</li>
+            <li class="c_select">第
+            <select class="c_choose" name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>页
+            </li>
+        </ul>
+    </div>
+</div>
+<p class="color_p"></p>
+<!-- bottom -->
+<div class="bottom">
+    <div class="b_img_C">
+        <img class="hq_logo" src="imgs/hq_logo.png" alt="">
+    </div>
+    <p class="btm_text">版权所有：北京华清飞扬网络股份有限公司</p>
+    <p class="btm_text">公司地址：北京市东城区建国门内大街7号光华长安大厦    联系方式：010-65101893</p>
+</div> 
+</div>
+
+</body>
+</html>

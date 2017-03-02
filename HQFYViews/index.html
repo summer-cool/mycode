@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>基本信息</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/dateRange.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/dateRange.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/tableExport.js"></script>
+    <script src="js/jquery.base64.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="#">
+            <img src="imgs/logo.png" alt="">
+        </a>
+    </div>
+    <div class="container">
+       <!--  <div class="Htitile">
+            <p>
+                <span>数据中心</span>
+                <span>
+                    <img src="imgs/right.png" alt="">
+                </span>
+                <span>基本数据</span>
+                <a href="#">
+                    切换至图表
+                </a>
+            </p>
+        </div> -->
+        <div class="clearfix">
+            <!-- 日期选择渠道服务筛选-->
+            <div class="choose">
+                <div class="ta_date" id="">
+                    <span><img style="    display: inline-block;margin-left: 8px;vertical-align: middle;" src="imgs/calendar.png" alt=""></span>
+                    <span class="date_title" id="date_calendar"></span>
+                    <a class="opt_sel" id="input_trigger" href="#">
+                    <i class="i_orderd"></i>
+                </a>
+                </div>
+                <div id="datePicker"></div>
+                <ul class="daychoose">
+                    <li>
+                        <a href="javascript:;" id="aRecent7Days" >最近七天</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="aRecent30Days" >最近30天</a>
+                    </li>
+                </ul>
+                <!-- 渠道服务器筛选 -->
+                <div class="Sx_box">
+                    <span class="sx_text">渠道:</span>
+                    <select class="chanel_choose">
+                        <option value="1">渠道1</option>
+                        <option value="2">渠道2</option>
+                        <option value="3">渠道3</option>
+                    </select>
+                    <span class="sx_text">区服:</span>
+                    <select class="server_choose">
+                        <option value="1">区服1</option>
+                        <option value="2">区服2</option>
+                        <option value="3">区服3</option>
+                    </select>
+                    <button class="sx_btn" type="button">确定</button>
+                </div>
+            </div>
+        </div>
+        <div class="center_sbox">
+            <button class="openid_choose" type="button"><input type="checkbox" name="">按照openID统计</button>
+            <p class="title_text">(更新时间：2016-10-13 17:01:28)<br>平台汇率 : 1美元 = 6.5元(人民币) Language : zh_CN</p>
+        </div>
+        <!-- 筛选渠道 -->
+        <div class="choose_box">
+            <div class="chanel">
+                <span class="chanel_text">渠道：</span>
+                <ul class="chanel_ul c_ul">
+                  
+                </ul>
+            </div>
+            <div class="chanel server">
+                <span class="chanel_text">区服：</span>
+                <ul class="chanel_ul f_ul">
+                   
+                </ul>
+            </div>
+        </div>
+        <!-- 今日数据显示框 -->
+        <div class="todayData">
+            <p class="td_p">实时信息</p>
+            <table class="td_table">
+                <tr>
+                    <th>新增用户</th>
+                    <th>DAU</th>
+                    <th>昨日次留存</th>
+                    <th>消费用户</th>
+                    <th>新增消费用户</th>
+                    <th>付费率</th>
+                    <th>ARPPU</th>
+                    <th>ARPU</th>
+                    <th>新用户付费</th>
+                    <th>总收入</th>
+                </tr>
+                <tr>
+                    <td>2123</td>
+                    <td>1321</td>
+                    <td>526</td>
+                    <td>123</td>
+                    <td>20.55</td>
+                    <td>45</td>
+                    <td>65</td>
+                    <td>12</td>
+                    <td>565</td>
+                    <td>46548</td>
+                </tr>
+            </table>
+        </div>
+        <div class="data_container">
+              <div class="data_choose">
+                <span class="choose_text">基本信息</span>
+                <p class="fenlei">分类方式:</p>
+                <ul class="choose_ul">
+                    <li class="choosed_li left_li">收入</li>
+                    <li>活跃</li>
+                    <li class="right_li">用户质量</li>
+                </ul>
+                <div class="excel">
+                    <ul>
+                        <li class="download download_jb" id="download">
+                            <img src="imgs/xiazai.png" alt="下载" title="下载">
+                        </li>
+                        <li class="explan">
+                            <img src="imgs/wenhao.png" alt="说明" title="说明" />
+                            <div class="explan_box">
+                                <div class="sjiantou">
+                                </div>
+                                <div class="explan_div">
+                                    <p class="ex_p">数据指标说明</p>
+                                    <div class="ex_detail">
+                                        <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data_box">
+        
+            <div class="choose_div show_dataDiv">
+                <table cellpadding="0" cellspacing="0" class="data_table" id="data_table">
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>星期</th>
+                            <th>总用户</th>
+                            <th>总收入</th>
+                            <th>LTV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2016-10-8</td>
+                            <td>一</td>
+                            <td>5264</td>
+                            <td>6258</td>
+                            <td>23.56</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div class="choose_div">
+                <table cellpadding="0" cellspacing="0" class="data_table">
+                    <tr>
+                        <th>日期</th>
+                        <th>星期</th>
+                        <th>活跃用户</th>
+                        <th>活跃付费用户</th>
+                        <th>新增用户</th>
+                        <th>消费用户</th>
+                        <th>新增消费用户</th>
+                    </tr>
+                    <tr>
+                        <td>2016-10-9</td>
+                        <td>二</td>
+                        <td>465</td>
+                        <td>45</td>
+                        <td>45</td>
+                        <td>6</td>
+                        <td>78</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="choose_div">
+                <table cellpadding="0" cellspacing="0" class="data_table">
+                    <tr>
+                        <th>日期</th>
+                        <th>星期</th>
+                        <th>付费率</th>
+                        <th>金额</th>
+                        <th>ARPPU</th>
+                        <th>ARPU</th>
+                        <th>平均在线时长/分钟</th>
+                    </tr>
+                    <tr>
+                        <td>2016-10-9</td>
+                        <td>三</td>
+                        <td>56.5</td>
+                        <td>7894</td>
+                        <td>145</td>
+                        <td>45</td>
+                        <td>66</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- loading -->
+            <div class="loading_box">
+                <div class="loading_data">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="loaddata_bg">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- 留存信息栏 -->
+        <div class="zj_data">
+        <div class="data_choose">
+                <span class="choose_text">新增用户信息</span>
+                <div class="excel">
+                    <ul>
+                        <li class="download download_yh" id="download">
+                            <img src="imgs/xiazai.png" alt="下载" title="下载">
+                        </li>
+                        <li class="explan">
+                            <img src="imgs/wenhao.png" alt="说明" title="说明" />
+                            <div class="explan_box">
+                                <div class="sjiantou">
+                                </div>
+                                <div class="explan_div">
+                                    <p class="ex_p">数据指标说明</p>
+                                    <div class="ex_detail">
+                                        <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                         <ul>
+                                            <li class="ex_li_1">渠道</li>
+                                            <li class="ex_li_2">打算发来看发生的方式发送到多少分士大夫撒旦你可能发生</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <table class="zj_table" id="zj_table">
+                <tr>
+                    <th>日期</th>
+                    <th>星期</th>
+                    <th>新增用户</th>
+                    <th>次日留存率</th>
+                    <th>7日留存率</th>
+                    <th>7日收入</th>
+                    <th>15日留存率</th>
+                    <th>15日收入</th>
+                    <th>30日留存率</th>
+                    <th>付费人数</th>
+                    <th>付费转化率</th>
+                    <th>付费金额</th>
+                    <th>LTV</th>
+                </tr>
+                <tr>
+                    <td>2016-10-10</td>
+                    <td>四</td>
+                    <td>56.4</td>
+                    <td>45.5</td>
+                    <td>465</td>
+                    <td>465</td>
+                    <td>87</td>
+                    <td>56+</td>
+                    <td>4135</td>
+                    <td>78</td>
+                    <td>415</td>
+                    <td>88</td>
+                    <td>97</td>
+                </tr>
+            </table>
+        </div>
+        <!-- 返回顶部 -->
+        <div class="gotop">
+            <ul class="topC">
+                <li>
+                    <img src="imgs/top.png" alt="">
+                </li>
+                <li class="top">返回顶部</li>
+            </ul>
+        </div>
+    </div>
+     <!-- 数据筛选弹窗 -->
+    <div class="sx_slider">
+        <div class="sx_titile">
+            <span>数据筛选</span>
+            <div class="close_sx">X</div>
+        </div>
+        <div class="sx_choose_C">
+            <ul class="sx_choose">
+                <li class="sx_ch_1 al_choose">渠道</li>
+                <li class="sx_ch_2">区服</li>
+            </ul>
+        </div>
+        <div class="sx_content">
+           
+        </div>
+        <div class="sx_content_2">
+           
+        </div>
+        <div class="sx_bottom">
+            <button class="sx_btn_sure" type="">
+                <img src="imgs/queding.png" alt="">
+                确定
+            </button>
+            <button class="sx_btn_cancel" type="">
+                <img src="imgs/shanchu.png" alt="">
+                取消
+            </button>
+        </div>
+    </div>
+    <div class="sx_bg">
+
+    </div>
+    <!-- 数据筛选框loading -->
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+    <!-- loding_bg -->
+    <div class="loading_bg"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>剑指太平洋-着陆</title>
+    <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <script src="js/reset.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/landing.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="head">
+    <div class="head_box">
+        <a href="http://www.llloveu.com/navilbatter/"><img class="icon_1" src="imgs/icon_1.png" alt=""></a>
+        <button class="down_btn" type="">游戏下载</button>
+        <a href="http://www.llloveu.com/navilbatter/">
+            <button class="join_btn" type="">进入官网</button>
+        </a>
+    </div>
+</div>
+<div class="container_mid">
+   <div class="center_btn_C">
+        <a href="#">
+            <img class="mid_img" src="imgs/lblq_btn.png" alt="">
+        </a>
+        <a href="#">
+            <img style="margin-top:17px;" class="mid_img" src="imgs/xzyx.png" alt="">
+        </a>
+        <img class="arrow_1" src="imgs/arrow_01.png" alt="">
+   </div>
+</div>
+<div class="game_text">
+    <p class="game_title">游戏介绍</p>
+    <p class="game_p_1 game_p">《舰指太平洋》是由华清飞扬研发的一款军事题材策略卡牌手游，游戏真实还原二战历史，完美再现海上争夺战。在《舰指太平洋》中，不仅有战役、争霸等经典玩法，还有富含变化的勋章、大地图等策略玩法，精彩不容错过！</p>
+    <p class="game_p_2 game_p">自2016年7月在韩国上线以来，《舰指太平洋》迅速冲进韩国Google Play畅销榜前三，并长期稳定在前十的位置，创国产手游海外发行新奇迹！</p>
+</div>
+<div class="slider_C">
+    <div class="yyts">
+        游戏特色
+        <img class="arrow_2" src="imgs/arrow_2.png" alt="">
+    </div>
+    <!-- swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imgs/slider_01.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/slider_02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/slider_03.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/slider_04.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/slider_05.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+</div>
+<div class="bottom">
+    <div class="b_img_C">
+        <img class="hq_logo" src="imgs/hq_logo.png" alt="">
+    </div>
+    <p class="btm_text">版权所有：北京华清飞扬网络股份有限公司</p>
+    <p class="btm_text">公司地址：北京市东城区建国门内大街7号光华长安大厦    联系方式：010-65101893</p>
+</div>  
+</div>
+
+</body>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical',
+    loop: true,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+  })        
+  </script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>demo</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script src='reset.js'></script>
+<script src='jqmin.js'></script>
+<script src='touch.min.js'></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="div divone">
+        <div class="topimg_container">
+            <img class="cloudImg" src="images/cloud6.png" alt="">
+            <img class="cloudImg" src="images/cloud1.png" alt="">
+            <img class="cloudImg" src="images/cloud2.png" alt="">
+            <img class="cloudImg" src="images/cloud3.png" alt="">
+            <img class="cloudImg" src="images/cloud4.png" alt="">
+            <img class="pageOne_img" src="images/1.png" alt="">
+        </div>
+            <span class="upImg"></span>
+            <p>向上滑动查看详情</p>
+        </div>
+        <div class="div divtwo">
+            <img class="bg_img" src="images/2.jpg" alt="">
+            <p class="moveText">想听音乐吗?</p>
+            <p class="moveText_2">听说手写的动画很麻烦?</p>
+            <div class="music_btn">
+                <div class="music_img">
+                </div>
+            </div>
+        </div>
+        <div class="div divthree">
+            3
+        </div>
+        <div class="div divfour">
+            4
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload =function() {
+        var con = document.getElementById("container");
+        var height = window.screen.height;
+        var mainscrollTop = $('#container').scrollTop();
+        con.style.height = height+'px';
+        
+        function animate(){
+            //第一页动画
+            if (mainscrollTop==0) {
+                $('.pageOne_img').addClass('imgA');
+                $('.upImg').addClass('upImagA');
+            }
+            //第二页动画
+            if (mainscrollTop/height==1) {
+                $('.moveText').addClass('moveTextA');
+                $('.moveText_2').addClass('moveTextA_2');
+
+            }else{
+                $('.moveText').removeClass('moveTextA');
+                $('.moveText_2').removeClass('moveTextA_2');
+            }
+        }
+        //sweipeUp
+        touch.on(con,'swipeup',function(){
+            if (mainscrollTop/height<=4) {
+                mainscrollTop+=height;
+                $('#container').animate({scrollTop:''+mainscrollTop+''});
+            };
+            animate();
+        });
+        //swiperDown
+        touch.on(con,'swipedown',function(){
+            if(mainscrollTop/height<=4&&mainscrollTop/height>0){
+                 mainscrollTop-=height;
+                 $('#container').animate({scrollTop:''+mainscrollTop+''}); 
+            };
+            animate();
+        });
+        animate();
+    }
+</script>
+</html>

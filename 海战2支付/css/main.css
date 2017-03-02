@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+html, body {
+height: 100%;
+}
+li{
+    list-style:none;
+}
+[data-dpr="1"] .title_text{
+    font-size:25px;
+}
+[data-dpr="3"] .title_text{
+    font-size:75px;
+}
+.title_text{
+    width:100%;
+    height:0.773333rem;
+    line-height:0.773333rem;
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+    text-align:center;
+    position:absolute;
+    left:0;
+    top:0.4rem;
+}
+.mainContainer{
+    width:10rem;
+    margin:0 auto;
+    min-height:100%;
+    overflow: hidden;
+    /*height: auto !important;*/
+    /*height: 90%;*/
+    margin-bottom:-1.7rem;
+    background:#e7e7e7;
+}
+.content{
+    padding-bottom:1.7rem;
+}
+.headImg{
+    width:10rem;
+    height:1.466667rem;
+}
+.headNav{
+    width:10rem;
+    height:1.306667rem;
+    box-shadow:0px 5px 7px 3px #c1c1c1;
+    text-align:center;
+}
+#header{
+    margin-bottom:0.293333rem;
+}
+.headTitle{
+    font-size:42px;
+    line-height:1.306667rem;
+    font-weight:bold;
+    float:left;
+    margin-left:1.906667rem;
+}
+[data-dpr="1"] .headTitle{
+    font-size:21px;
+}
+[data-dpr="3"] .headTitle{
+    font-size:63px;
+}
+.navUl{
+    width:10rem;
+    height:100%;
+}
+.navUl li{
+    background:#eeeeee;
+    width:100%;
+    height:1.293333rem;
+    line-height:1.293333rem;
+    font-size:36px;
+    border-bottom:1px solid #bebebe;
+}
+[data-dpr="1"] .navUl li{
+    font-size:16px;
+}
+[data-dpr="3"] .navUl li{
+    font-size:48px;
+}
+.navUl li span{
+    float: left;
+    margin-left:0.48rem;
+}
+.navUl li:last-child{
+    margin-bottom:0.533333rem;
+}
+.navUl_img{
+    width:0.333333rem;
+    height:0.4rem;
+    display:inline-block;
+    float:right;
+    margin:0.413333rem 0.426667rem 0 0; 
+}
+.touchLi{
+    background:#bebebe !important;
+}
+[data-dpr="1"] .upButton{
+    font-size:14px;
+}
+[data-dpr="2"] .upButton{
+    font-size:28px;
+}
+[data-dpr="3"] .upButton{
+    font-size:42px;
+}
+.upButton{
+    margin:0.206667rem 0 0 0.24rem;
+    font-weight:bold;
+    outline:none;
+    border:none;
+    width:1.866667rem;
+    height:0.8rem;
+    background:#a3daf8;
+    border-radius:10px;
+    text-align:center;
+    color:#5990b6;
+    float:left;
+}
+.serverTishi{
+    margin: 0 auto;
+    width:9.146667rem;
+    min-height:1.453333rem;
+    background:#c7e1ee;
+    margin-bottom:0.546667rem;
+}
+[data-dpr="1"] .serverDetial{
+    font-size:16px;
+}
+[data-dpr="2"] .serverDetial{
+    font-size:32px;
+}
+[data-dpr="3"] .serverDetial{
+    font-size:48px;
+}
+.serverDetial{
+    display:inline-block;
+    width:8.533333rem;
+    margin:0.453333rem 0 0 0.506667rem;
+}
+.serverDetial li{
+    width:100%;
+    height:0.493333rem;
+    line-height:0.493333rem;
+    margin-bottom:0.4rem;
+}
+.serverDetial span:nth-child(even){
+    color:#1070a7;
+}
+
+[data-dpr="1"] .footer{
+    font-size:12px;
+}
+[data-dpr="2"] .footer{
+    font-size:22px;
+}
+[data-dpr="3"] .footer{
+    font-size:36px;
+}
+.footerContainer{
+    width:10rem;
+    margin:0 auto;
+    background:#e6e6e6;
+}
+.footer{
+    width:9.12rem;
+    height:1.766667rem;
+    border-top:1px dashed;
+    margin: 0 auto;
+    text-align:center;
+    color:#707070;
+    line-height:0.4rem;
+}
+.footer p:nth-child(1){
+    margin-top:0.4rem;
+}
+/*加载动画*/
+.spinner {
+  position:absolute;
+  margin:0 -1rem 0 -1rem;
+  width: 2.0rem;
+  text-align: center;
+  left:50%;
+  top:50%;
+  z-index: 999;
+  display:none;
+}
+.spinner_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:998;
+    background:black;
+    opacity:0.5;
+    left:0;
+    top:0;
+    display:none;
+    filter:opacity(50);
+}
+.spinner > div {
+  width: 0.466667rem;
+  height: 0.466667rem;
+  background-color: #FF9800;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	//location.href= 'http://jztpy.sincetimes.com:8061/hq_website/mobile_new/landing.html';
+	location.href= 'http://jztpy.sincetimes.com/mobile_new/index.html';
+});
+</script>
+</html>

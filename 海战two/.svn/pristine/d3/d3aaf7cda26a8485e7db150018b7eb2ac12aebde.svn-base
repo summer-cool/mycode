@@ -1,0 +1,28 @@
+http://zjdg.sincetimes.com:8099/getInfoListByTypeName.do?infoType=zuixin
+
+http://zjdg.sincetimes.com:8099/getInfoListByTypeName.do?infoType=xinwen
+
+http://zjdg.sincetimes.com:8099/getInfoListByTypeName.do?infoType=gonggao
+
+http://zjdg.sincetimes.com:8099/getInfoListByTypeName.do?infoType=huodong
+
+返回结果示例
+{"infoList":[
+{"active":0,"content":"文章内容 ",
+"date":1473696000000,
+"hoverPicture":"",
+"id":316,
+"istop":0,"mobilePicture":"",
+"subtitle":"《战舰帝国》中秋月饼大作战  十万话费任性送！",
+"title":"《战舰帝国》中秋月饼大作战  十万话费任性送！",
+"type":2}}],
+"tips":"活动"}
+type说明1,,"新闻",2,"活动",3,"公告",6,"攻略",0,"zuixin","最新"
+
+
+需要拼接的链接
+点击查看更多
+http://zjdg.sincetimes.com:8099/infos.do?infoType=huodong
+
+文章详情
+http://zjdg.sincetimes.com:8099/info_detail.do?id=316

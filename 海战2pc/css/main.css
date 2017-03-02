@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "微软黑体";
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width:100%;
+    height:auto;
+}
+.content_C{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.header{
+    width:1200px;
+    height:415px;
+    background:url(../imgs/head_bg.jpg) no-repeat;
+    background-size: cover;
+}
+body{
+    background: -webkit-linear-gradient(#034268, #000305); 
+  background: -o-linear-gradient(#034268, #000305); 
+  background: -moz-linear-gradient(#034268, #000305); 
+  background: linear-gradient(#034268, #000305);
+}
+.hd_logo{
+    display:block;
+    width:350px;
+    height:150px;
+    margin:0 0 0 77px;
+}
+.hd_video{
+    width: 440px;
+    height: 250px;
+    margin: 0px 0 0 77px;
+}
+/*选项卡*/
+.nav_tab{
+    width:1200px;
+    height:55px;
+    line-height:55px;
+    background:black;
+}
+.nav_li{
+    width:33.333%;
+    height:55px;
+    line-height:55px;
+    color:white;
+    font-size:30px;
+    float:left;
+    text-align:center;
+}
+/*服務窗*/
+.fw_slider{
+    width:165px;
+    height:280px;
+    background:black;
+    position:absolute;
+    right:0;
+    top:10px;
+}
+.fw_detial{
+    width:123px;
+    height:255px;
+    float:left;
+    margin-top:14px;
+    text-align:center;
+}
+.fw_img_1{
+    width:118px;
+    height:118px;
+    margin:0 auto;
+}
+.fw_img_2{
+    width:100%;
+    height:44px;
+    /*margin:5px 0 5px 0;*/
+}
+.fw_img_3{
+    width:100%;
+    height:44px;
+}
+.fw_img_4{
+    width:100%;
+    height:40px;
+}
+.fw_cloose{
+    width:18px;
+    height:82px;
+    float:left;
+    margin:98px 14px 0 4px;
+    background:#4b4b4b;
+    cursor:pointer;
+}
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid black;
+    border-bottom: 10px solid transparent;
+    margin: 29px 0 0 3px;
+}
+/*footer*/
+.footer_C{
+    width:1200px;
+    height:67px;
+    line-height:67px;
+    text-align:center;
+    margin:0 auto;
+}
+.footer{
+    margin:0 auto;
+    width:600px;
+    height:67px;
+    font-size:24px;
+    line-height:67px;
+    color:#707070;
+}
+.footer img{
+    width:58px;
+    height:58px;
+    float:left;
+    margin-right:-54px;
+}
+#slider_fen{
+    width:100px;
+    left:1100px;
+}
+.swiper-pagination-bullet{
+    width:20px;
+    height:20px;
+    background:#ff7200;
+    border-radius:0px;
+}
+.swiper-button-prev{
+    display:none;
+}
+.swiper-button-next{
+    display:none;
+}

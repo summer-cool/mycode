@@ -1,0 +1,294 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+
+.container{
+    background:url(../imgs/banner.jpg) no-repeat;
+    background-size:cover;
+    width:9.3rem;
+    margin:0 auto;
+}
+.head_title{
+    width:9.3rem;
+    height:1.87rem;
+    margin:0 auto;
+    margin-top:0.27rem;
+}
+.head_title img{
+    display:inline-block;
+    width:1.87rem;
+    height:1.87rem;
+}
+.topContainer{
+    width:9.3rem;
+    height:2.89rem;
+    margin:0 auto;
+    margin-top:1rem;
+    margin-bottom:0.53rem;
+    overflow:hidden;
+}
+.showVideo{
+    width:5.01rem;
+    height:2.89rem;
+    float:left;
+}
+.showUl{
+    width:3.84rem;
+    height:0.96rem;
+    float:left;
+    margin:1.8rem 0 0 0.223rem;
+}
+.showUl li{
+    width:1.8rem;
+    height:0.96rem;
+    float:left;
+    line-height:0.96rem;
+    border:1px solid #bcbcbc;
+    text-align: center;
+    color:white;
+}
+/*中间tab切换部分*/
+#centerSlider{
+    width:9.3rem;
+    height:4.33rem;
+    margin:0 auto;
+    overflow: hidden;
+}
+.tabUl{
+    width:100%;
+}
+.tabUl li{
+    width:2.22rem;
+    height:0.75rem;
+    float:left;
+    text-align:center;
+    line-height:0.75rem;
+    font-size:16px;
+    border:1px solid #bcbcbc;
+    margin-right:0.05rem;
+}
+.tabDiv{
+    width:9.22rem;
+    height:3.4rem;
+    float:left;
+    overflow:hidden;
+    border:1px solid #bcbcbc;
+    border-top:none;
+    display:none;
+}
+.tabLi{
+   font-size:0.3rem;
+   font-weight:bold;
+   border-bottom:none !important;
+}
+.tabnew_ul{
+    width:7.29rem;
+    height:3.2rem;
+    float:left;
+    margin:0.4rem 0 0 0.2rem;
+}
+.tabnew_ul li a{
+    color:#bcbcbc;
+}
+.tabnew_ul li{
+    width:100%;
+    height:0.53rem;
+    font-size:16px;
+    line-height:0.53rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-top:0.08rem;
+}
+.tabnew_ul li:nth-child(1){
+    border:1px solid #d8d8d8;
+}
+.viewMore{
+    width:1.62rem;
+    height:1.52rem;
+    float:right;
+    margin-top:1.81rem;
+    text-align:center;
+    margin-right:0.1rem;
+    
+}
+.viewMore img{
+    display:inline-block;
+    width:0.83rem;
+    height:0.83rem;
+}
+.viewMore span{
+    display:inline-block;
+    font-size:12px;
+    margin-top:0.2rem;
+    color:#565656;
+}
+/*微博模块*/
+.weibo{
+    width:9.3rem;
+    height:5.67rem;
+    margin:0 auto;
+    margin-top:0.33rem;
+    margin-bottom:0.4rem;
+    position: relative;
+}
+.tuite{
+    background:#bcbcbc;
+    width:1.89rem;
+    height:0.55rem;
+    text-align:center;
+    font-size:16px;
+    line-height:0.55rem;
+    color:white;
+}
+.weibo_detial{
+    width:100%;
+    height:5.133rem;
+    border:1px solid #bcbcbc;
+}
+.wb_container{
+    width:8.53rem;
+    height:5.71rem;
+    margin:0 auto;
+    margin-top:0.27rem;
+}
+.wb_text{
+    width:8.75rem;
+    height:3.5rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.send_text{
+    width:8.53rem;
+    height:0.83rem;
+    margin-top:0.18rem;
+    font-size:12px;
+    background:white;
+    color:#bcbcbc;
+    line-height:0.83rem;
+}
+.user_img img{
+    display:inline-block;
+    float:left;
+    width:1rem;
+    height:1rem;
+}
+.content{
+    width:7.54rem;
+    min-height:1rem;
+    background:white;
+    font-size:16px;
+    margin-left:1.1rem;
+}
+.content ul{
+    width:100%;
+}
+.content ul li{
+    float:left;
+    display: inline-block;
+    width:50%;
+    height:0.5rem;
+    font-size:12px;
+}
+.content img{
+    width:100%;
+}
+.sendMessage{
+    width:100%;
+    height:0.83rem;
+    outline:none;
+    border:1px solid #bcbcbc;
+}
+.floow_btn{
+    outline:none;
+    border:none;
+    background:url(../imgs/follow.png) no-repeat;
+    background-size:cover;
+    width:1.6rem;
+    height:0.5rem;
+    position:absolute;
+    top:0;
+    right:0.1rem;
+}
+/*滚图模块*/
+.swiper-container{
+    width:9.3rem;
+    height:1.84rem;
+    margin:0 auto;
+    margin-top:0.4rem;
+}
+.swiper-slide img{
+    width:100%;
+    height:100%;
+}
+/*尾部资料部分*/
+.introlduce_C{
+    width:9.3rem;
+    height:2.01rem;
+    background:#f2f2f2;
+    margin:0 auto;
+    overflow: hidden;
+    margin-top:0.4rem;
+}
+.introlduce{
+    width:9.01rem;
+    height:2rem;
+    margin:0 auto;
+    margin-top:0.266rem;
+    /*border:1px solid red;*/
+    overflow: hidden;
+}
+.gameImg{
+    width:1.28rem;
+    height:1.28rem;
+    display:inline-block;
+    float:left;
+}
+.appstore{
+    width:1.8rem;
+    height:1rem;
+    background:white;
+    border:1px solid #bcbcbc;
+    float:left;
+    line-height:1rem;
+    text-align:center;
+    margin:0.13rem 0.266rem 0 0.4rem; 
+}
+.gogelstore{
+    width:1.8rem;
+    height:1rem;
+    line-height:1rem;
+    text-align:center;
+    background:white;
+    border:1px solid #bcbcbc;
+    float:left;
+    margin:0.13rem 0.3rem 0 0;
+}
+.introlduce_text{
+    float:left;
+    width:3rem;
+    height:2rem;
+    word-wrap: break-word
+}
+.introlduce_text li{
+    font-size:10px;
+    word-break: break-all; 
+    word-wrap:break-word;
+}
+/*尾部*/
+.footer{
+    width:100%;
+    height:1.08rem;
+    background:#c9c9c9;
+    text-align: center;
+    font-size:12px;
+    line-height:1.08rem;
+    margin-top:0.266rem;
+}

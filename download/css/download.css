@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+html,body{
+    height:100%;
+}
+.container{
+    width:10rem;
+    min-height:100%;
+    position:relative;
+}
+.container img{
+    width:100%;
+}
+.d_btn{
+    position:absolute;
+    width:5.066667rem;
+    height:1.733333rem;
+    left:50%;
+    top:12.986667rem;
+    margin-left:-2.533333rem;
+    display:inline-block;
+}

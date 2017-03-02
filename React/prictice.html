@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="src/css.css">
+<script src='build/flexible.js'></script>
+<script src="build/jqmin.js"></script>
+<script src='build/react.js'></script>
+<script src='build/JSXTransformer.js'></script>
+<style>
+
+</style>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+<script type="text/jsx">
+  var Count = React.createClass({
+        getInitialState:function(){
+            return{
+                data:0
+            }
+        },
+        setNewNumber:function(){
+            this.setState({
+                data:this.state.data+1
+            })
+        },
+        render:function(){
+            return(
+                <div>
+                    <button onClick={this.setNewNumber} type="button">click me</button>
+                    <p>{this.state.data}</p>
+                </div>
+            )
+        }
+  });
+ 
+    React.render(
+        <Count />,
+        document.body
+    )
+</script>
+</html>

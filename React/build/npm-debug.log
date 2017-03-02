@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\hq\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.9.5
+3 info using node@v6.1.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\wamp\\www\\React\\build',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\hq\AppData\Roaming\npm-cache\runoob\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\hq\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 verbose makeDirectory C:\Users\hq\AppData\Roaming\npm-cache creation not in flight; initializing
+11 verbose makeCacheDir UID & GID are irrelevant on win32
+12 info lifecycle runoob@1.0.0~prepublish: runoob@1.0.0
+13 silly lifecycle runoob@1.0.0~prepublish: no script for prepublish, continuing
+14 verbose tar pack [ 'C:\\Users\\hq\\AppData\\Roaming\\npm-cache\\runoob\\1.0.0\\package.tgz',
+14 verbose tar pack   'C:\\wamp\\www\\React\\build' ]
+15 verbose tarball C:\Users\hq\AppData\Roaming\npm-cache\runoob\1.0.0\package.tgz
+16 verbose folder C:\wamp\www\React\build
+17 verbose addLocalTarball adding from inside cache C:\Users\hq\AppData\Roaming\npm-cache\runoob\1.0.0\package.tgz
+18 verbose correctMkdir C:\Users\hq\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 silly cache afterAdd runoob@1.0.0
+20 verbose afterAdd C:\Users\hq\AppData\Roaming\npm-cache\runoob\1.0.0\package\package.json not in flight; writing
+21 verbose correctMkdir C:\Users\hq\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+22 verbose afterAdd C:\Users\hq\AppData\Roaming\npm-cache\runoob\1.0.0\package\package.json written
+23 silly publish { name: 'runoob',
+23 silly publish   version: '1.0.0',
+23 silly publish   description: 'Node.js测试模块(www.runoob.com)',
+23 silly publish   main: 'JSXTransformer.js',
+23 silly publish   scripts: { test: 'make test', start: 'node server.js' },
+23 silly publish   repository: { type: 'git', url: 'git+https://github.com/runoob/runoob.git' },
+23 silly publish   author: '',
+23 silly publish   license: 'ISC',
+23 silly publish   bugs: { url: 'https://github.com/runoob/runoob/issues' },
+23 silly publish   homepage: 'https://github.com/runoob/runoob#readme',
+23 silly publish   readme: 'ERROR: No README data found!',
+23 silly publish   _id: 'runoob@1.0.0',
+23 silly publish   _shasum: '6c8c5573dd3f51f8e55d3e316fce85d0ac0bc5c7',
+23 silly publish   _from: '.' }
+24 verbose getPublishConfig undefined
+25 silly mapToRegistry name runoob
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: 'runoob',
+28 silly mapToRegistry   scope: null,
+28 silly mapToRegistry   name: 'runoob',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/runoob
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading C:\Users\hq\AppData\Roaming\npm-cache\runoob\1.0.0\package.tgz
+32 verbose request uri https://registry.npmjs.org/runoob
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 11:54:35
+35 verbose request using bearer token for auth
+36 verbose request id 264a3394164ec531
+37 http request PUT https://registry.npmjs.org/runoob
+38 http 403 https://registry.npmjs.org/runoob
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '100',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 14 Jun 2016 03:54:38 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-itm7421-ITM',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1465876474.699291,VS0,VE3646',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 verbose request invalidating C:\Users\hq\AppData\Roaming\npm-cache\registry.npmjs.org\runoob on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: you do not have permission to publish "runoob". Are you logged in as the correct user? : runoob
+42 verbose stack     at makeError (C:\Users\hq\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\hq\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+42 verbose stack     at Request._callback (C:\Users\hq\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+42 verbose stack     at Request.self.callback (C:\Users\hq\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:200:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (C:\Users\hq\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1067:10)
+42 verbose stack     at emitOne (events.js:101:20)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (C:\Users\hq\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:988:12)
+43 verbose statusCode 403
+44 verbose pkgid runoob
+45 verbose cwd C:\wamp\www\React\build
+46 error Windows_NT 6.1.7601
+47 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\hq\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+48 error node v6.1.0
+49 error npm  v3.9.5
+50 error code E403
+51 error you do not have permission to publish "runoob". Are you logged in as the correct user? : runoob
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]

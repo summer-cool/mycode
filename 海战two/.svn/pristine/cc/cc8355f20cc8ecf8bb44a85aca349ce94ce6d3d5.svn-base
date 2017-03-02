@@ -1,0 +1,326 @@
+<!-- 手机网站的首页 -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head lang="en">
+	<title>战舰帝国</title>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="mobile/imgs/icon_1.png"/>
+    <link rel="stylesheet" type="text/css" href="mobile/css/swiper.css"/>
+    <link rel="stylesheet" type="text/css" href="mobile/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="mobile/css/main.css"/>
+    <script src="mobile/js/reset.js"></script>
+    <script src="mobile/js/zepto.js"></script>
+    <script src="mobile/js/swiper.jquery.min.js"></script>
+    <script src="mobile/js/index.js"></script>
+    <script src="mobile/js/main.js"></script>
+    <script src="mobile/js/fastclick.js"></script>
+      <script type="text/javascript">
+        $(function() {  
+            FastClick.attach(document.body);  
+        });
+      </script>
+</head>
+<body>
+<!-- head -->
+<div class="head">
+    <div class="head_box">
+         <a href="index.html"><img class="icon_1" src="mobile/imgs/icon_1.png" alt=""/></a>
+        <a href="download.jsp"> <button class="down_btn" type=""></button></a>
+
+        <div class="head_T">
+            <p class="hd_sp_1">
+              <img src="mobile/imgs/titile.png" alt=""/>
+            </p>
+            <!-- <p class="hd_sp_2">军事题材策略卡牌手游</p> -->
+        </div>
+        <div class="menu_C">
+            <span class="menu_span mune_sp_1"></span>
+            <span class="menu_span mune_sp_2"></span>
+            <span style="margin-bottom:0;" class="menu_span mune_sp_3"></span>
+        </div>
+    </div>
+</div>
+<!-- 菜单层 -->
+<div class="menu_bg">
+  
+</div>
+<div class="menu_Div">
+    <ul class="m_ul_1">
+      <li></li>
+      <a href="wireless.do"><li>首页</li></a>
+      <a href="infos.do?infoType=xinwen"><li>游戏资讯</li></a>
+      <a href="infos.do?infoType=huodong"><li>游戏活动</li></a>
+      <a href="infos.do?infoType=gonglue"><li>游戏攻略</li></a>
+      <a href="http://forum.sincetimes.com/forum.php?mod=forumdisplay&amp;fid=2&amp;page=1" ><li>游戏论坛</li></a>
+    </ul>
+    <ul class="m_ul_2">
+      <li>
+        <img src="mobile/imgs/kefuQQ.png" alt=""/>
+      </li>
+      <li>
+        <img src="mobile/imgs/jiaoliuqun.png" alt=""/>
+      </li>
+    </ul>
+    <p class="m_p_1">推荐游戏:</p>
+    <p class="m_p_2"><img src="mobile/imgs/weixin_tuijian.png" alt=""/>坦克帝国</p>
+</div>
+<div class="container_index">
+    <div class="index_top">
+    <img url="mobile/cg.htm" class="index_video" src="mobile/imgs/video_start.png" alt=""/>
+        <!-- 导航栏 -->
+        <div class="nav_index">
+          <ul>
+            <li>
+              <img class="up_1" src="mobile/imgs/yxzx.png" alt=""/>
+            </li>
+            <li>
+              <img class="up_2" src="mobile/imgs/yxzs.png" alt=""/>
+            </li>
+            <li>
+              <a href="http://forum.sincetimes.com/forum.php?mod=forumdisplay&amp;fid=2&amp;page=1">
+                <img class="up_3" src="mobile/imgs/gflt.png" alt=""/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      <!-- 礼物 -->
+      <div class="gift">
+          <p class="gift_text">礼包兑换</p>
+      </div>
+      <!-- 礼包弹窗 -->
+      <!-- 敬请期待 -->
+      <div class="jq_qd gift_slider">
+          <img class="gift_close" src="mobile/imgs/close_btn.jpg" alt=""/>
+      </div>
+      <!-- 领取成功 -->
+      <div class="lq_cg gift_slider">
+        <img class="gift_close" src="mobile/imgs/close_btn.jpg" alt=""/>
+         <div class="cf_detail">
+              <span class="code"></span>
+              <span class="copy_text">长按复制</span>
+          </div>
+      </div>
+      <!-- 领取 -->
+      <div class="lblq gift_slider">
+      <img class="gift_close" src="mobile/imgs/close_btn.jpg" alt=""/>
+          <div class="lq_detail">
+              <div class="phone_row">
+                  <span class="phone_num">手机号:</span>
+                  <input class="phone_input" type="text" name="" placeholder="请输入你的手机号"/>
+              </div>
+              <button class="lq_btn" type="button"></button>
+              <div class="lq_text_C">
+              <p></p>
+                <p>礼包内容：168钻石，特级宝箱 x 5 ， 特级钥匙 x 5 ， 王牌间谍令（可获得随即橙船）</p>
+                <p>领取说明：复制激活码后，进入游戏，在角色界面点“设置”→“礼包兑换”，粘贴后点击领取即可获得尊享礼包</p>
+              </div>
+          </div>
+      </div>
+      <!-- 重复领取 -->
+      <div class="cflq gift_slider">
+      <img class="gift_close" src="mobile/imgs/close_btn.jpg" alt=""/>
+          <div class="cf_detail">
+              <span class="code">asdasdasrfada</span>
+              <span class="copy_text">长按复制</span>
+          </div>
+      </div>
+      <!-- slider_bg -->
+      <div class="slider_bg">
+      </div>
+    </div>
+    <!-- 关注微信 -->
+    <div class="gz_wx">
+      <div class="gz_C">
+          <span class="gz_sp_1">关注“战舰帝国”公众号</span>
+          <img src="mobile/imgs/wx_gz.png" alt=""/>
+          <span class="gz_sp_2">微信号：hqfy-haizhan</span>
+      </div>   
+    </div>
+    <!-- 游戏资讯 -->
+    <div class="game_news up_m_1">
+        <p class="gn_t_1">游戏资讯</p>
+        <p class="gn_t_2">GAME INFORMATION</p>
+        <img class="gn_arrow" src="mobile/imgs/arrow_2.png" alt=""/>
+    </div>
+    <!-- slider_1 -->
+    <div class="swiper-container swiper_one">
+        <div class="swiper-wrapper addin_slider">
+            <div class="swiper-slide">
+                <a class="lunbotu1" href="">
+                <img class="sw_img" src="mobile/imgs/zixun_1.jpg" alt=""/>
+                </a>
+                <p class="swiper_P">《舰指太平洋》高清场景原画曝光</p>
+            </div>
+            <div class="swiper-slide">
+                <a class="lunbotu2" href="">
+                  <img class="sw_img" src="mobile/imgs/zixun_2.jpg" alt=""/>
+                </a>
+                <p class="swiper_P">《舰指太平洋》高清场景原画曝光</p>
+            </div>
+            <div class="swiper-slide">
+                <a class="lunbotu3" href="">
+                <img class="sw_img" src="mobile/imgs/zixun_3.jpg" alt=""/>
+                </a>
+                <p class="swiper_P">《舰指太平洋》高清场景原画曝光</p>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 新闻 -->
+    <div class="index_news">
+        <div class="news_C">
+            <ul class="news_ul">
+                <li class="news_Li news_a_li">
+                    <span>最新</span>
+                    <span class="triangle-down arow_down"></span>
+                </li>
+                <li class="news_Li">
+                    <span>综合资讯</span>
+                    <span class="triangle-down arow_down"></span>
+                </li>
+                <li class="news_Li">
+                    <span>新闻公告</span>
+                    <span class="triangle-down"></span>
+                </li>
+                <li class="news_Li" style="margin-right:0;">
+                    <span>游戏资料</span>
+                    <span class="triangle-down"></span>
+                </li>
+            </ul>
+            <!-- 最新 -->
+             <div class="news_div news_div_show news_0">
+                  
+            </div>
+            <!-- 综合资讯 -->
+            <div class="news_div news_1">
+               
+            </div>
+            <!-- 新闻公告 -->
+            <div class="news_div news_2">
+               
+            </div>
+            <!-- 游戏资料 -->
+            <div class="news_div news_3">
+            
+            </div>
+        </div>
+    </div>
+     <!-- 游戏特色 -->
+    <div class="game_news">
+        <p class="gn_t_1">游戏特色</p>
+        <p class="gn_t_2">GAME FEATURES</p>
+        <img class="gn_arrow" src="mobile/imgs/arrow_2.png" alt=""/>
+    </div>
+    <div class="game_sp">
+      <div class="swiper-container swiper_3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="sd_3_img" src="mobile/imgs/tese_1.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img class="sd_3_img" src="mobile/imgs/tese_2.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+              <img class="sd_3_img" src="mobile/imgs/tese_3.jpg" alt=""/>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+      <!--游戏展示 -->
+    <div class="game_news up_m_2">
+        <p class="gn_t_1">游戏展示</p>
+        <p class="gn_t_2">GAME SHOW</p>
+        <img class="gn_arrow" src="mobile/imgs/arrow_2.png" alt=""/>
+    </div>
+    <div class="game_show">
+      <div class="gs_C">
+          <ul>
+            <li class="gs_li gs_li_active">截图</li>
+            <li class="gs_li">视频</li>
+            <div class="gs_d_line">
+                <span class="gs_span gs_span_active"></span>
+                <span class="gs_span"></span>
+            </div>
+          </ul>
+          <div class="gs_div gs_div_show">
+            <div class="swiper-container swiper_4">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="sd_3_img" src="mobile/imgs/jt_1.jpg" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="sd_3_img" src="mobile/imgs/jt_2.jpg" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="sd_3_img" src="mobile/imgs/jt_3.jpg" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="sd_3_img" src="mobile/imgs/jt_4.jpg" alt=""/>
+                  </div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+              <!-- 如果需要导航按钮 -->
+             <!--  <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+            </div>
+          </div>
+          <div class="gs_div">
+              <div class="swiper-container swiper_5">
+                <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img class="sd_3_img" src="mobile/imgs/cg_bg.png" alt=""/>
+                          <img url="mobile/cg.htm" class="video_start" src="mobile/imgs/video_logo.png" alt=""/>
+                      </div>
+                      <div class="swiper-slide">
+                          <img class="sd_3_img" src="mobile/imgs/cg1_bg.png" alt=""/>
+                          <img url="mobile/video_1.htm" class="video_start" src="mobile/imgs/video_logo.png" alt=""/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="sd_3_img" src="mobile/imgs/cg2._bg.png" alt=""/>
+                        <img url="mobile/video_2.htm" class="video_start" src="mobile/imgs/video_logo.png" alt=""/>
+                      </div>
+                    </div>
+                  <!-- 如果需要分页器 -->
+                  <div class="swiper-pagination"></div>
+                  <!-- 如果需要导航按钮 -->
+                  <!--  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+              </div>
+          </div>
+      </div>
+        <p class="color_p"></p>
+    </div>
+    <!-- cg视频 -->
+    <div class="video_bg"></div>
+    <div class="video_container">
+        <div class="video_box">
+            <div class="close_video"></div>
+            <iframe id="frame" frameborder="0" name="Iframe1" src="" width="100%" height="100%">
+                您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。
+            </iframe>
+        </div>
+    </div>
+    
+    <!-- bottom -->
+    <div class="bottom">
+        <div class="b_img_C">
+            <img class="hq_logo" src="mobile/imgs/hq_logo.png" alt=""/>
+            <div class="btm_text_C">
+               <img src="mobile/imgs/bootm_text.png" alt=""/>
+            </div>
+        </div>
+    </div>
+      <!-- 微信弹层 -->
+    <div class="wx_bg"></div>
+
+</div>
+</body>
+</html>

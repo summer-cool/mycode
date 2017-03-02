@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "黑体",sans-serif;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width:10rem;
+    height:auto;
+    margin:0 auto;
+    overflow-x:hidden;
+}
+a{
+    color: white;
+    text-decoration:none;
+}
+/*头部*/
+.head{
+    position:fixed;
+    height:1.4rem;
+    width:10rem;
+    /*left:0;*/
+    top:0;
+    z-index:3;
+}
+.head_box{
+    position:relative;
+    width:10rem;
+    height:1.146667rem;
+    background:url(../imgs/head_bg.png) no-repeat;
+    background-size:cover;
+}
+.icon_1{
+    width:1.253333rem;
+    height:1.253333rem;
+    position:absolute;
+    left:0.186667rem;
+    top:0.24rem;
+}
+.head_box button{
+    width:1.84rem;
+    height:0.693333rem;
+    border-radius:0.066667rem;
+    outline:none;
+    border:none;
+    float:right;
+    margin-top:0.266667rem;
+}
+[data-dpr="2"] .down_btn{
+    font-size:28px;
+}
+[data-dpr="1"] .down_btn{
+    font-size:14px;
+}
+[data-dpr="3"] .down_btn{
+    font-size:42px;
+}
+.down_btn{
+    background:#31d050;
+    color:#313131;
+    margin-right:0.24rem;
+}
+[data-dpr="2"] .join_btn{
+    font-size:28px;
+}
+[data-dpr="1"] .join_btn{
+    font-size:14px;
+}
+[data-dpr="3"] .join_btn{
+    font-size:42px;
+}
+.join_btn{
+    background:#f5c600;
+    color:#313131;
+    margin-right:0.293333rem;
+}
+.head_T{
+    width:4.0rem;
+    height:1.133333rem;
+    float: left;
+    margin-left:1.733333rem;
+}
+[data-dpr="1"] .hd_sp_1{
+    font-size:15px;
+}
+[data-dpr="2"] .hd_sp_1{
+    font-size:30px;
+}
+[data-dpr="3"] .hd_sp_1{
+    font-size:50px;
+}
+.hd_sp_1{
+    color:white;
+    font-weight:bold;
+    padding-top:0.2rem;
+}
+[data-dpr="1"] .hd_sp_2{
+    font-size:12px;
+}
+[data-dpr="2"] .hd_sp_2{
+    font-size:18px;
+}
+[data-dpr="3"] .hd_sp_2{
+    font-size:30px;
+}
+.hd_sp_2{
+    color:#bebebf;
+}
+/*底部*/
+.bottom{
+    width:10rem;
+    min-height:3.16rem;
+    background:#1b1a1a;
+}
+.b_img_C{
+    width:7.933333rem;
+    height:2.266667rem;
+    margin:0 auto;
+    text-align:center;
+}
+.hq_logo{
+    width:1.693333rem;
+    height:0.866667rem;
+    padding-top:0.613333rem;
+}
+[data-dpr="1"] .btm_text{
+    font-size:12px;
+}
+[data-dpr="2"] .btm_text{
+    font-size:12px;
+}
+[data-dpr="3"] .btm_text{
+    font-size:24px;
+}
+.btm_text{
+    padding:0 0.5rem;
+    color:#656565;
+    width:100%;
+}

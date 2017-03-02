@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留存信息</title>
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dateRange.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/liucun.js"></script>
+    <script src="js/dateRange.js"></script>
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/tableExport.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="clearfix">
+            <!-- 日期选择渠道服务筛选-->
+            <div class="choose">
+                <div class="ta_date" id="">
+                    <span><img style="    display: inline-block;margin-left: 8px;vertical-align: middle;" src="imgs/calendar.png" alt=""></span>
+                    <span class="date_title" id="date_calendar"></span>
+                    <a class="opt_sel" id="input_trigger" href="#">
+                    <i class="i_orderd"></i>
+                </a>
+                </div>
+                <div id="datePicker"></div>
+                <ul class="daychoose">
+                    <li>
+                        <a href="javascript:;" id="aRecent7Days" >最近七天</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="aRecent30Days" >最近30天</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center_sbox">
+            <p class="title_text">(更新时间：2016-10-13 17:01:28)<br>平台汇率 : 1美元 = 6.5元(人民币) Language : zh_CN</p>
+        </div>
+        <div class="data_container">
+            <span class="choose_text">留存信息</span>
+            <div class="excel">
+                <ul>
+                    <li style="float: right;" class="download download_yh" id="download">
+                        <img src="imgs/xiazai.png" alt="下载" title="下载">
+                    </li>
+                </ul>
+            </div>
+            <div class="data_box">
+                <table class="hour_table" id="hour_table">
+                    <tr>
+                        <th rowspan="2">日期</th>
+                        <th rowspan="2">星期</th>
+                        <th rowspan="2">新增用户数</th>
+                        <th colspan="2">第2天</th>
+                        <th colspan="2">第3天</th>
+                        <th colspan="2">第4天</th>
+                        <th colspan="2">第5天</th>
+                        <th colspan="2">第6天</th>
+                        <th colspan="2">第7天</th>
+                        <th colspan="2">第15天</th>
+                        <th colspan="2">第30天</th>
+                        <th colspan="2">第45天</th>
+                        <th colspan="2">第60天</th>
+                        <th colspan="2">第75天</th>
+                        <th colspan="2">第90天</th>
+                        <th colspan="2">第120天</th>
+                    </tr>
+                    <tr>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                        <td>留存用户数</td>
+                        <td>比例</td>
+                    </tr>
+                    <tr>
+                        <td>2016-10-20</td>
+                        <td>一</td>
+                        <td>13</td>
+                        <td>56</td>
+                        <td>456</td>
+                        <td>46</td>
+                        <td>45</td>
+                        <td>456</td>
+                        <td>4</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>13</td>
+                        <td>56</td>
+                        <td>456</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

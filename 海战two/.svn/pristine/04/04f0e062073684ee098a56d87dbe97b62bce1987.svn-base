@@ -1,0 +1,35 @@
+
+
+（1）
+获取激活码
+http://jztpy.sincetimes.com/get_a_code?sn=jztpy_home?who=18640217026
+
+返回结果
+成功
+{"result":1,"code":"u334RmDmBVhudP"}
+成功，但是之前领过
+{"result":2,"code":"u334RmDmBVhudP"}
+失败
+{"result":0}
+
+（2）
+获取轮播图
+
+http://jztpy.sincetimes.com:8061/hq_website/get_lunbo?lunbo_group_no=lunbo_1
+
+结果
+{"group_no":"lunbo_1","desc":"空的轮播图",
+"lunbos":[{"img_url":"files/1.jpg","img_url_cdn":null,"link_url":"https://www.baidu.com/","status":1},
+			{"img_url":"files/2.jpg","img_url_cdn":null,"link_url":"https://www.baidu.com/","status":1},
+			{"img_url":"files/lunbo_1/2.jpg","img_url_cdn":null,"link_url":"","status":0},
+			{"img_url":"files/1.jpg","img_url_cdn":null,"link_url":"https://www.baidu.com/","status":0}],
+"time":1481787718997}
+
+
+（3）激活码领取时间判断
+http://jztpy.sincetimes.com:8061/hq_website/get_code_available
+{"result":1,"end":1482732000000,"begin":1481954400000}在时间内
+
+{"result":2,"end":1482732000000,"begin":1481954400000}时间没到
+{"result":3,"end":1482732000000,"begin":1481954400000}超过时间
+{"result":4}未知错误，一般不会发生

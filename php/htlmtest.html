@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <script src="jquery.js"></script>
+<style>
+#userlist{margin:4px; height:42px} 
+#userlist li{float:left; width:80px; line-height:42px; height:42px; font-size:14px;  
+font-weight:bold} 
+#info{clear:left; padding:6px; border:1px solid #b6d6e6; background:#e8f5fe} 
+#info p{line-height:24px} 
+#info p span{font-weight:bold} 
+</style>
+</head>
+<body>
+<ul id="userlist"> 
+   <li><a href="#" rel="1">张三</a></li> 
+   <li><a href="#" rel="2">李四</a></li> 
+   <li><a href="#" rel="3">王五</a></li> 
+</ul> 
+<div id="info"> 
+   <p>姓：<span id="firstname"></span></p> 
+   <p>名：<span id="lastname"></span></p> 
+   <p>邮箱：<span id="email"></span></p> 
+</div> 
+</body>
+<script>
+$(function(){ 
+    $("#userlist a").bind("click",function(){ 
+        var hol = $(this).attr("rel"); 
+        var action="getlink"; 
+        $.ajax({
+            type:"POST",
+            datatype:'json',
+            url:"ajax_jh.php",
+            data:{
+                id:hol,
+                action:action,
+            },
+            success:function(data){
+              var data = eval(data);
+              $('#firstname').html(data.firstname);
+              $('#lastname').html(data.lastname);
+              $('#email').html(data.firstname);
+            }
+        })
+    }); 
+}); 
+</script>
+</html>

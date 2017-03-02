@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='js/zepto.js'></script>
+    <script src='js/fastclick.js'></script>
+<style>
+    button{
+        width:300px;
+        height:50px;
+        font-size:30px;
+    }
+    div{
+        font-size:50px;
+    }
+</style>
+</head>
+<body>
+   <button class="ss" type="">点我试试</button> 
+   <button class="test" type="">点我呢</button>
+   <div class="hh"></div>
+</body>
+<script>
+$(function() {  
+    FastClick.attach(document.body);  
+});
+$(document).ready(function(){
+    $('.ss').click(function(){
+        $('.hh').html("你妹啊啊啊啊啊啊")
+    })
+     $('.test').bind("touchend",function(){
+        $('.hh').html("乌拉拉拉拉拉拉拉大声道")
+    })
+})
+</script>
+</html>

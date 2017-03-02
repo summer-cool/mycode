@@ -1,0 +1,114 @@
+$(document).ready(function() {
+    var FrameRates = {
+        film: 24,
+        NTSC: 29.97,
+        NTSC_Film: 23.98,
+        NTSC_HD: 59.94,
+        PAL: 25,
+        PAL_HD: 50,
+        web: 30,
+        high: 60
+    };
+
+    debug = true;
+    var mySwiper = new Swiper('.swiper_one', {
+        // direction: 'vertical',
+        loop: true,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+    });
+      var mySwiper = new Swiper('.swiper_two', {
+        slidesPerView : 3,
+        spaceBetween : 20,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });
+      // 新闻切换
+    $('.news_Li').click(function() {
+        $(this).siblings(".news_Li").removeClass("news_a_li");
+        $(this).addClass("news_a_li");
+        $(this).siblings(".news_Li").find('.triangle-down').removeClass("arow_down");
+        $(this).find('.triangle-down').addClass("arow_down");
+        var index = $(this).index();
+        $(".news_div").removeClass("news_div_show");
+        $(".news_div").eq(index).addClass("news_div_show");
+    });
+    // 战舰介绍切换
+    $('.zj_li').click(function() {
+        var index = $(this).index();
+        $('.zj_li').removeClass("zj_active");
+        $(this).addClass("zj_active");
+        $(".zj_img").removeClass("zj_img_show");
+        $(".zj_img").eq(index).addClass("zj_img_show");
+    });
+    // 视频部分
+    $('.v_img').click(function(){
+        var num = $(this).attr("num");
+        $(".game_v_div").removeClass("game_v_show");
+        $(".game_v_div").eq(num).addClass("game_v_show");
+    });
+    //微博
+    $('.wb_l').bind("touchstart",function(){
+        $(this).find("img").attr("src","imgs/wb_2.png");
+        $(this).bind("touchend",function(){
+            $(this).find("img").attr("src","imgs/wb_logo.png");
+        })
+    });
+    // qq联系
+    var b =0;
+    $(".qq_l").click(function(){
+        $(".qq_contack").toggle();
+         if (b == 0) {
+            $(this).find("img").attr("src","imgs/qq_2.png");
+            b = 1;
+        }else if (b==1) {
+             $(this).find("img").attr("src","imgs/qq_logo.png");
+            b = 0;
+        }
+    });
+     $('.qq_l').bind("touchstart",function(){
+        $(this).find("img").attr("src","imgs/qq_2.png");
+        $(this).bind("touchend",function(){
+            $(this).find("img").attr("src","imgs/qq_logo.png");
+        })
+    });
+    // 微信联系
+    var a = 0;
+    $(".wx_l").click(function(){
+        $(".wx_contack").toggle();
+        if (a == 0) {
+            $(".wx_img").attr("src","imgs/wx_2.png");
+            a = 1;
+        }else if (a==1) {
+            $(".wx_img").attr("src","imgs/wx_logo.png");
+            a = 0;
+        }
+    });
+     $('.wx_l').bind("touchstart",function(){
+        $(".wx_img").attr("src","imgs/wx_2.png");
+        $(this).bind("touchend",function(){
+            $(".wx_img").attr("src","imgs/wx_logo.png");
+        })
+    });
+     // 百度
+      $('.bd_l').bind("touchstart",function(){
+        $(this).find("img").attr("src","imgs/bd_2.png");
+        $(this).bind("touchend",function(){
+            $(this).find("img").attr("src","imgs/bd_logo.png");
+        })
+    });
+    // 打开视频
+    $(".video_start").click(function(){
+        $('.video_bg').show();
+        $(".video_container").show();
+        var videoSrc = $(this).attr("url");
+        $("#frame").attr("src",""+videoSrc+"");
+    });
+    // 关闭视频
+    $(".close_video").click(function(){
+        $('.video_bg').hide();
+        $(".video_container").hide();
+        $("#frame").attr("src","");
+    });
+});

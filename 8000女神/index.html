@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script src="js/reset.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script type="text/javascript">
+    $(function() {  
+        FastClick.attach(document.body);  
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+    <!-- loading -->
+        <div class="loading">
+           <div class="main">
+                <div class="loadEffect">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="load_text">LOADING</p>
+        </div>
+        <div class="load_bg"></div>
+    <!-- 音频 -->
+    <div class="audio_C">
+        <audio id="Audio" preload="auto" src="music/music.mp3" autoplay="autoplay" loop="loop" hidden></audio>
+    </div>
+    <div class="control_C">
+        <img class="volume_img" src="imgs/Volume_1.png" alt=""> 
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 第一屏 -->
+            <div class="swiper-slide slider_one">
+                <img class="yue" src="imgs/yue.png" alt="">
+                <div class="yue_bg"></div>
+            </div>
+            <!-- 第二屏 -->
+            <div class="swiper-slide slider_two">
+                <img class="sd_two_C" src="imgs/2_rota_img.jpg" alt="">
+                <img class="two_text ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="0.5s" swiper-animate-delay="5s" src="imgs/2_text.png" alt="">
+                <a href="#">
+                    <img class="guan_zhu ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="5s" src="imgs/gz.png" alt="">
+                </a>
+            </div>
+            <!-- 第三屏 -->
+            <div class="swiper-slide slider_three">
+                <img class="ani three_text" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="imgs/3_text.png" alt="">
+                <a href="#">
+                    <img class="guan_zhu gz_3 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="imgs/gz.png" alt="">
+                </a>
+            </div>
+            <!-- 第四屏 -->
+            <div class="swiper-slide slider_four">
+                <img class="ani  text_4"  swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="imgs/4_text.png" alt="">
+                <a href="#">
+                    <img class="guan_zhu gz_4 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="imgs/gz.png" alt="">
+                </a>
+            </div>
+            <!-- 第五屏 -->
+            <div class="swiper-slide slider_five">
+            <ul>
+                <li>
+                    <img class="five_img_1 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="imgs/logo.png" alt=""> 
+                </li>
+                <li>
+                    <img class="five_img_2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s" src="imgs/5_text.png" alt=""> 
+                </li>
+                <li>
+                    <img class="five_img_3 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.9s" src="imgs/erweima.png" alt="">
+                </li>
+                <li>
+                    <img class="five_img_4 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s" src="imgs/sine_text.png" alt="">
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="five_img_5 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s" src="imgs/doload.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>

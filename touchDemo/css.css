@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width:100%;
+    overflow:hidden;
+}
+.div{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.topimg_container{
+    width:100%;
+    height:90%;
+}
+.divone{
+    background:url(images/appBg1.jpg) no-repeat;
+    text-align: center;
+    overflow: hidden;
+    position:relative;
+}
+.divone p{
+    font-size:0.5rem;
+    color:white;
+    font-weight:bold;
+}
+.upImg{
+    width: 1.2rem;
+    height: 1rem;
+    display: inline-block;
+    margin: 0 auto;
+    background: url(images/units-icons.png);
+    background-repeat: no-repeat;
+    background-position: -68px;
+}
+.bg_img{
+    width:10rem;
+    height:100%;
+    position:absolute;
+}
+.pageOne_img{
+    width:8rem;
+    height:78%;
+    margin:0 auto;
+    margin-top:16%;
+}
+.cloudImg{
+    width:100%;
+    height:5rem;
+    position:absolute;
+    opacity: 0;
+}  
+/*第一页img动画*/
+.imgA{
+    animation:imgScale 1s ease infinite alternate;
+}
+.upImagA{
+    animation:uplogo 0.5s ease infinite alternate;
+}
+.topimg_container img:nth-child(1){
+    width:9rem;
+    height:4rem;
+    position:absolute;
+    animation:cloud 1.2s linear  infinite;
+}
+.topimg_container img:nth-child(2){
+    width:9rem;
+    height:4rem;
+    position:absolute;
+    animation:cloud 1.5s linear  infinite;
+}
+.topimg_container img:nth-child(3){
+    width:9rem;
+    height:4rem;
+    position:absolute;
+    animation:cloud 2s linear 0.3s infinite;
+}
+.topimg_container img:nth-child(4){
+    width:9rem;
+    height:4rem;
+    position:absolute;
+    animation:cloud 3s linear infinite;
+}
+.topimg_container img:nth-child(5){
+    width:9rem;
+    height:4rem;
+    position:absolute;
+    animation:cloud 4s linear infinite;
+}
+/*第二页动画*/
+.moveText{
+    font-size:15px;
+    color:white;
+    text-align: center;
+    opacity: 0;
+}
+.moveText_2{
+    font-size:15px;
+    color:orange;
+    text-align: center;
+    -webkit-transform:translateX(-2rem);
+}
+.moveTextA{
+    animation:move 2s ease-in-out;
+    animation-fill-mode:forwards;
+}
+.moveTextA_2{
+    animation:right 1s ease-in-out;
+    animation-fill-mode:forwards;
+}
+.divthree{
+    background:pink;
+}
+.divfour{
+    background:black;
+}
+.music_btn{
+    width:10rem;
+    height:5rem;
+    background:red;
+    margin-top:5rem;
+}
+.music_img{
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    background: url(images/page-icons.png) no-repeat;
+    background-position: 0.027rem -2.59rem;
+}
+@keyframes move{
+    0%{
+        -webkit-transform:translateY(-2rem);
+    }
+    100%{
+        -webkit-transform:translateY(6rem);
+        font-size:1rem;
+        color:#B2BFB2;
+        opacity:1;
+    }
+}
+@keyframes right{
+    0%{
+        -webkit-transform:translateX(-2rem) rotateX(80deg);
+    }
+    100%{
+        -webkit-transform:translateX(-0.25rem) rotateX(-30deg);
+        font-size:0.75rem;
+    }
+}
+@keyframes imgScale{
+    0%{
+        -webkit-transform:scale(1);
+    }
+    100%{
+        -webkit-transform:scale(1.05);
+    }
+}
+/*第一页动画*/
+/*飘动云朵*/
+@keyframes cloud{
+  0% {
+    -webkit-transform: scale(0.5) translate(-300px,300px) rotateX(0deg) rotateY(0deg);
+    opacity: 0;
+}
+33% {
+    -webkit-transform: scale(1) translate(-80px,80px) rotateX(20deg) rotateY(-20deg);
+    opacity: 1;
+}
+
+66% {
+    -webkit-transform: scale(1.5) translate(100px,-100px) rotateX(30deg) rotateY(-10deg);
+    opacity: .8;
+}
+100% {
+    -webkit-transform: scale(1.8) translate(300px,-300px) rotateX(0deg) rotateY(0deg);
+    opacity: .6;
+}
+}
+/*向上箭头*/
+@keyframes uplogo{
+    0%{
+        -webkit-transform:translateY(0);
+        opacity:1;
+    }
+    100%{
+        -webkit-transform:translateY(0.2rem);
+        opacity:0;
+    }
+}
